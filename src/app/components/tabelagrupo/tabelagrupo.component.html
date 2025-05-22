@@ -11,7 +11,7 @@
                             <ng-template pTemplate="header">
                                 <tr>
                                     <th></th>
-                                    <th>Time</th>
+                                    <th></th>
                                     <th>P</th>
                                     <th>J</th>
                                     <th>V</th>
@@ -21,7 +21,13 @@
                             </ng-template>
                             <ng-template pTemplate="body" let-timeGrupoA>
                                 <tr>
-                                    <td>{{timeGrupoA.img}}</td>
+                                    <td>
+                                        <img 
+                                            [src]="timeGrupoA.img" 
+                                            [alt]="timeGrupoA.nome"
+                                            width="50"
+                                        />
+                                    </td>
                                     <td>{{timeGrupoA.nome}}</td>
                                     <td>{{timeGrupoA.pontos}}</td>
                                     <td>{{timeGrupoA.jogos}}</td>
@@ -44,7 +50,7 @@
                             <ng-template pTemplate="header">
                                 <tr>
                                     <th></th>
-                                    <th>Time</th>
+                                    <th></th>
                                     <th>P</th>
                                     <th>J</th>
                                     <th>V</th>
@@ -54,7 +60,13 @@
                             </ng-template>
                             <ng-template pTemplate="body" let-timeGrupoB>
                                 <tr>
-                                    <td>{{timeGrupoB.img}}</td>
+                                     <td>
+                                        <img 
+                                            [src]="timeGrupoB.img" 
+                                            [alt]="timeGrupoB.nome"
+                                            width="50"
+                                        />
+                                    </td>
                                     <td>{{timeGrupoB.nome}}</td>
                                     <td>{{timeGrupoB.pontos}}</td>
                                     <td>{{timeGrupoB.jogos}}</td>

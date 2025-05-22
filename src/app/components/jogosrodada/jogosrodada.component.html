@@ -31,14 +31,30 @@
                                 <th>Data e Hora</th>
                                 <th ></th>
                                 <th></th>
+                                <th></th>
+                                <th></th>
                                 <th></th>                                        
                             </tr>
                         </ng-template>
                         <ng-template pTemplate="body" let-rodada1>
                             <tr >
                                 <td>{{rodada1.dataHora}}</td>
+                                <td>
+                                    <img 
+                                        [src]="rodada1.time1[0]?.img" 
+                                        [alt]="rodada1.time1[0]?.nome"
+                                        width="50"
+                                        />
+                                </td>
                                 <td >{{rodada1.time1[0]?.nome}}</td>
                                 <td>X</td>
+                                 <td>
+                                    <img 
+                                        [src]="rodada1.time2[0]?.img" 
+                                        [alt]="rodada1.time2[0]?.nome"
+                                        width="50"
+                                        />
+                                </td>
                                 <td>{{rodada1.time2[0]?.nome}}</td>                                        
                             </tr>                                   
                         </ng-template>
@@ -56,16 +72,32 @@
                         <ng-template pTemplate="header">
                             <tr>
                                 <th>Data e Hora</th>
+                                <th ></th>
                                 <th></th>
                                 <th></th>
-                                <th></th>                                        
+                                <th></th>
+                                <th></th>                                       
                             </tr>
                         </ng-template>
                         <ng-template pTemplate="body" let-rodada2>
                             <tr>
                                 <td>{{rodada2.dataHora}}</td>
+                                 <td>
+                                    <img 
+                                        [src]="rodada2.time1[0]?.img" 
+                                        [alt]="rodada2.time1[0]?.nome"
+                                        width="50"
+                                        />
+                                </td>
                                 <td>{{rodada2.time1[0]?.nome}}</td>
                                 <td>X</td>
+                                 <td>
+                                    <img 
+                                        [src]="rodada2.time2[0]?.img" 
+                                        [alt]="rodada2.time2[0]?.nome"
+                                        width="50"
+                                        />
+                                </td>
                                 <td>{{rodada2.time2[0]?.nome}}</td>                                        
                             </tr>
                         </ng-template>
@@ -83,6 +115,8 @@
                             <ng-template pTemplate="header">
                                 <tr >
                                     <th>Data e Hora</th>
+                                    <th ></th>
+                                    <th></th>
                                     <th></th>
                                     <th></th>
                                     <th></th>                                        
@@ -91,8 +125,22 @@
                             <ng-template pTemplate="body" let-rodada3>
                                 <tr>
                                     <td>{{rodada3.dataHora}}</td>
+                                     <td>
+                                        <img 
+                                            [src]="rodada3.time1[0]?.img" 
+                                            [alt]="rodada3.time1[0]?.nome"
+                                            width="50"
+                                            />
+                                    </td>
                                     <td>{{rodada3.time1[0]?.nome}}</td>
                                     <td>X</td>
+                                     <td>
+                                        <img 
+                                            [src]="rodada3.time2[0]?.img" 
+                                            [alt]="rodada3.time2[0]?.nome"
+                                            width="50"
+                                            />
+                                    </td>
                                     <td>{{rodada3.time2[0]?.nome}}</td>                                       
                                 </tr>
                             </ng-template>
@@ -112,14 +160,30 @@
                                     <th>Data e Hora</th>
                                     <th></th>
                                     <th></th>
+                                    <th></th>
+                                    <th></th>
                                     <th></th>                                        
                                 </tr>
                             </ng-template>
                             <ng-template pTemplate="body" let-rodada4>
                                 <tr>
                                     <td>{{rodada4.dataHora}}</td>
+                                    <td>
+                                        <img 
+                                            [src]="rodada4.time1[0]?.img" 
+                                            [alt]="rodada4.time1[0]?.nome"
+                                            width="50"
+                                            />
+                                    </td>
                                     <td>{{rodada4.time1[0]?.nome}}</td>
                                     <td>X</td>
+                                    <td>
+                                        <img 
+                                            [src]="rodada4.time2[0]?.img" 
+                                            [alt]="rodada4.time2[0]?.nome"
+                                            width="50"
+                                            />
+                                    </td>
                                     <td>{{rodada4.time2[0]?.nome}}</td>                                      
                                 </tr>
                             </ng-template>
@@ -136,17 +200,33 @@
                         <p-table [value]="rodadas5" [rows]="5">
                             <ng-template pTemplate="header">
                                 <tr>
-                                    <th>Data e Hora</th>
+                                   <th>Data e Hora</th>
+                                    <th ></th>
                                     <th></th>
                                     <th></th>
-                                    <th></th>                                        
+                                    <th></th>
+                                    <th></th>                                       
                                 </tr>
                             </ng-template>
                             <ng-template pTemplate="body" let-rodada5>
                                 <tr>
                                     <td>{{rodada5.dataHora}}</td>
+                                    <td>
+                                        <img 
+                                            [src]="rodada5.time1[0]?.img" 
+                                            [alt]="rodada5.time1[0]?.nome"
+                                            width="50"
+                                            />
+                                    </td>
                                     <td>{{rodada5.time1[0]?.nome}}</td>
                                     <td>X</td>
+                                    <td>
+                                        <img 
+                                            [src]="rodada5.time2[0]?.img" 
+                                            [alt]="rodada5.time2[0]?.nome"
+                                            width="50"
+                                            />
+                                    </td>
                                     <td>{{rodada5.time2[0]?.nome}}</td>                                      
                                 </tr>
                             </ng-template>
