@@ -1,11 +1,18 @@
 import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
+import { NavabarComponent } from '../navabar/navabar.component';
+import { BemvindoComponent } from '../bemvindo/bemvindo.component';
+import { PatrocinoComponent } from '../patrocino/patrocino.component';
+import { TabelagrupoComponent } from '../tabelagrupo/tabelagrupo.component';
+import { JogosrodadaComponent } from "../jogosrodada/jogosrodada.component";
+
 import { ToolbarModule } from 'primeng/toolbar';
 import { SplitterModule } from 'primeng/splitter';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { StepperModule } from 'primeng/stepper';
+
 
 
 @Component({
@@ -15,8 +22,13 @@ import { StepperModule } from 'primeng/stepper';
     SplitterModule,
     TableModule,
     ButtonModule,
-    StepperModule
-  ],
+    StepperModule,
+    NavabarComponent,
+    BemvindoComponent,
+    PatrocinoComponent,
+    TabelagrupoComponent,
+    JogosrodadaComponent
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

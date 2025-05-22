@@ -1,0 +1,24 @@
+.divjogos{
+    margin-top: 20px;
+    .divjogosgrupoa{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin: 0;
+    }
+    .divjogosgrupob{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin: 0;
+    }    
+   h2{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin: 0;
+    }
+}

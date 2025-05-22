@@ -1,0 +1,40 @@
+@media (min-width: 769px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+  .container {
+    overflow: hidden;
+   .divbemvindo{
+    h2{
+        align-items: center;
+    }
+   } 
+  }
+}
+
+.divbemvindo{
+    h2{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin: 0;
+
+    }  
+    p{        
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin: 0;
+    }
+}
