@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { TableModule } from 'primeng/table';
 import { StepperModule } from 'primeng/stepper';
+
+import { CampeonatoService } from '../../services/campeonato.service';
 
 @Component({
   selector: 'app-jogosrodada',
@@ -9,6 +11,21 @@ import { StepperModule } from 'primeng/stepper';
   templateUrl: './jogosrodada.component.html',
   styleUrl: './jogosrodada.component.css'
 })
-export class JogosrodadaComponent {
+export class JogosrodadaComponent implements OnInit {
+
+  constructor(private campeonatoService : CampeonatoService) {}
+  rodadas1: any[] = [];
+  rodadas2: any[] = []; 
+  rodadas3: any[] = [];
+  rodadas4: any[] = [];
+  rodadas5: any[] = [];
+
+  ngOnInit(): void {
+    this.rodadas1 = this.campeonatoService.rodadas1;
+    this.rodadas2 = this.campeonatoService.rodadas2;
+    this.rodadas3 = this.campeonatoService.rodadas3;
+    this.rodadas4 = this.campeonatoService.rodadas4;
+    this.rodadas5 = this.campeonatoService.rodadas5;    
+  }
 
 }
