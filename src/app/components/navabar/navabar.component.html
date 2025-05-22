@@ -1,19 +1,27 @@
  <div class="navbar">
         <p-toolbar [style]="{ 'border-radius': '0rem',  }">
-            <ng-template #start>             
-                <p-button severity="secondary">
-                    <i class="pi pi-facebook"></i> 
+            <ng-template #start>
+                <p-button severity="secondary"   >
+                    <a href="https://www.facebook.com/profile.php?id=61575567917023&locale=pt_BR">
+                        <i class="pi pi-facebook"></i> 
+                    </a>             
                 </p-button> 
                 <p-button severity="secondary">
-                    <i class="pi pi-instagram"></i> 
+                    <a href="https://www.instagram.com/tvconsoni.esportes/">
+                        <i class="pi pi-instagram"></i> 
+                    </a>
                 </p-button>
             </ng-template>
             <ng-template #center>
-                logo do campenato
+                <div class="logo">                                        
+                    <p-image src="https://dc614.4shared.com/img/klPMOEvifa/s24/196fa076da8/logoCampeonato?async&rand=0.8720606168629451" alt="" width="50"/>
+                </div>
             </ng-template>
              <ng-template #end>
                 <p-button severity="secondary">
-                    <i class="pi pi-youtube"></i> 
+                    <a href=""> 
+                        <i class="pi pi-youtube"></i> 
+                    </a>
                 </p-button>               
             </ng-template>
         </p-toolbar>
