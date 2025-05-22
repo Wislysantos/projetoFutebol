@@ -1,0 +1,272 @@
+<div class="container">
+    <div class="navbar">
+        <p-toolbar [style]="{ 'border-radius': '0rem',  }">
+            <ng-template #start>             
+                <p-button severity="secondary">
+                    <i class="pi pi-facebook"></i> 
+                </p-button> 
+                <p-button severity="secondary">
+                    <i class="pi pi-instagram"></i> 
+                </p-button>
+            </ng-template>
+            <ng-template #center>
+                logo do campenato
+            </ng-template>
+             <ng-template #end>
+                <p-button severity="secondary">
+                    <i class="pi pi-youtube"></i> 
+                </p-button>               
+            </ng-template>
+        </p-toolbar>
+    </div>
+
+    <div class="divbemvindo">
+        <div class="mobile">
+            <h2>Bem-vindo ao Campeonato</h2>
+            <h2> nome do Campeonato</h2>
+        </div>
+        <div class="desktop">
+            <h2>Bem-vindo ao Campeonato nome do Campeonato</h2>       
+        </div>
+        <p>Esta é a página inicial do campeonato. Aqui você pode encontrar informações sobre os jogos, equipes e muito mais.</p>
+    </div> 
+
+    <div class="divpatrocino">
+        <p>aqui vai ter os patrocinadores</p>
+    </div>
+
+    <div class="divjogos">
+        <h2>Tabela do Campeonato</h2>        
+        <p-splitter [layout]="isMobile ? 'vertical' : 'horizontal'">
+            <ng-template pTemplate>
+                <div class="flex items-center justify-center h-full">
+                    <div class="divjogosgrupoa">
+                        <h1>Grupo A</h1>
+                    </div>
+                    <div>
+                        <p-table [value]="timesClasssificacaodoGrupoA" [rows]="5">
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th></th>
+                                    <th>Time</th>
+                                    <th>P</th>
+                                    <th>J</th>
+                                    <th>V</th>
+                                    <th>E</th>
+                                    <th>D</th>
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="body" let-timeGrupoA>
+                                <tr>
+                                    <td>{{timeGrupoA.img}}</td>
+                                    <td>{{timeGrupoA.nome}}</td>
+                                    <td>{{timeGrupoA.pontos}}</td>
+                                    <td>{{timeGrupoA.jogos}}</td>
+                                    <td>{{timeGrupoA.vitorias}}</td>
+                                    <td>{{timeGrupoA.empates}}</td>
+                                    <td>{{timeGrupoA.derrotas}}</td>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template pTemplate>
+                <div class="flex items-center justify-center h-full">
+                    <div class="divjogosgrupob">
+                        <h1>Grupo B</h1>
+                    </div>
+                    <div>
+                        <p-table [value]="timesClasssificacaodoGrupoB" [rows]="5">
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th></th>
+                                    <th>Time</th>
+                                    <th>P</th>
+                                    <th>J</th>
+                                    <th>V</th>
+                                    <th>E</th>
+                                    <th>D</th>
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="body" let-timeGrupoB>
+                                <tr>
+                                    <td>{{timeGrupoB.img}}</td>
+                                    <td>{{timeGrupoB.nome}}</td>
+                                    <td>{{timeGrupoB.pontos}}</td>
+                                    <td>{{timeGrupoB.jogos}}</td>
+                                    <td>{{timeGrupoB.vitorias}}</td>
+                                    <td>{{timeGrupoB.empates}}</td>
+                                    <td>{{timeGrupoB.derrotas}}</td>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </div>
+                </div>
+            </ng-template>
+        </p-splitter>
+    </div>
+
+    <div class="divrodadas">
+        <h2>Próximos Jogos</h2>
+        <p>RODADAS</p>
+        <p-stepper [value]="1" class="basis-[50rem]">
+            <div class="desktop">
+                <p-step-list>                
+                <p-step [value]="1">1° RODADA</p-step>
+                <p-step [value]="2">2° RODADA</p-step>
+                <p-step [value]="3">3° RODADA</p-step>
+                <p-step [value]="4">4° RODADA</p-step>
+                <p-step [value]="5">5° RODADA</p-step>                              
+            </p-step-list>
+            </div>  
+            <div class="mobile">
+                <p-step-list>                
+                <p-step [value]="1"></p-step>
+                <p-step [value]="2"></p-step>
+                <p-step [value]="3"></p-step>
+                <p-step [value]="4"></p-step>
+                <p-step [value]="5"></p-step>                              
+            </p-step-list>
+            </div>            
+            <p-step-panels>
+                <p-step-panel [value]="1">
+                    <ng-template #content let-activateCallback="activateCallback">
+                        <div class="flex flex-col h-48">
+                            <div>
+                            <p-table [value]="rodadas1" [rows]="5">
+                                <ng-template pTemplate="header">
+                                    <tr>
+                                        <th>Data e Hora</th>
+                                        <th ></th>
+                                        <th></th>
+                                        <th></th>                                        
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-rodada1>
+                                    <tr >
+                                        <td>{{rodada1.dataHora}}</td>
+                                        <td >{{rodada1.time1[0]?.nome}}</td>
+                                        <td>X</td>
+                                        <td>{{rodada1.time2[0]?.nome}}</td>                                        
+                                    </tr>                                   
+                                </ng-template>
+                            </p-table>
+                            </div>                            
+                        </div>
+                    </ng-template>
+                </p-step-panel>
+
+                <p-step-panel [value]="2">
+                    <ng-template #content let-activateCallback="activateCallback">
+                        <div class="flex flex-col h-48">
+                            <div>
+                               <p-table [value]="rodadas2" [rows]="5">
+                                <ng-template pTemplate="header">
+                                    <tr>
+                                        <th>Data e Hora</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>                                        
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-rodada2>
+                                    <tr>
+                                        <td>{{rodada2.dataHora}}</td>
+                                        <td>{{rodada2.time1[0]?.nome}}</td>
+                                        <td>X</td>
+                                        <td>{{rodada2.time2[0]?.nome}}</td>                                        
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                            </div>
+                        </div>                        
+                    </ng-template>
+                </p-step-panel>
+
+                <p-step-panel [value]="3">
+                    <ng-template #content let-activateCallback="activateCallback">
+                        <div class="flex flex-col h-48">
+                            <div>
+                               <p-table [value]="rodadas3" row="5">
+                                    <ng-template pTemplate="header">
+                                        <tr >
+                                            <th>Data e Hora</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>                                        
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-rodada3>
+                                        <tr>
+                                            <td>{{rodada3.dataHora}}</td>
+                                            <td>{{rodada3.time1[0]?.nome}}</td>
+                                            <td>X</td>
+                                            <td>{{rodada3.time2[0]?.nome}}</td>                                       
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </div>
+                        </div>                        
+                    </ng-template>
+                </p-step-panel>
+
+                <p-step-panel [value]="4">
+                    <ng-template #content let-activateCallback="activateCallback">
+                        <div class="flex flex-col h-48">
+                            <div>
+                                <p-table [value]="rodadas4" [rows]="5">
+                                    <ng-template pTemplate="header">
+                                        <tr>
+                                            <th>Data e Hora</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>                                        
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-rodada4>
+                                        <tr>
+                                            <td>{{rodada4.dataHora}}</td>
+                                            <td>{{rodada4.time1[0]?.nome}}</td>
+                                            <td>X</td>
+                                            <td>{{rodada4.time2[0]?.nome}}</td>                                      
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </div>
+                        </div>                        
+                    </ng-template>
+                </p-step-panel>
+
+                <p-step-panel [value]="5">
+                    <ng-template #content let-activateCallback="activateCallback">
+                        <div class="flex flex-col h-48">
+                            <div>
+                                <p-table [value]="rodadas5" [rows]="5">
+                                    <ng-template pTemplate="header">
+                                        <tr>
+                                            <th>Data e Hora</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>                                        
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-rodada5>
+                                        <tr>
+                                            <td>{{rodada5.dataHora}}</td>
+                                            <td>{{rodada5.time1[0]?.nome}}</td>
+                                            <td>X</td>
+                                            <td>{{rodada5.time2[0]?.nome}}</td>                                      
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </div>
+                        </div>                        
+                    </ng-template>
+                </p-step-panel>
+            </p-step-panels>
+        </p-stepper>
+
+    </div>
+    
+</div>
