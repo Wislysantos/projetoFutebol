@@ -44,11 +44,11 @@ export class CampeonatoService {
   ]
 
   public rodadas2 = [
-    { dataHora: "08/06 19:50",time1: this.timeCrystalPalace, placarTime1: 0, time2: this.timeRealBlack, placarTime2: 0 },
-    { dataHora: "08/06 20:50",time1: this.timeTaquaral, placarTime1: 0, time2: this.timeFuria, placarTime2: 0 },
-    { dataHora: "08/06 08:30",time1: this.timeLions, placarTime1: 0, time2: this.timeGalaticos, placarTime2: 0 },
-    { dataHora: "15/06 09:30",time1: this.timeGama, placarTime1: 0, time2: this.timeBelaVista, placarTime2: 0 },
-    { dataHora: "15/06 10:30",time1: this.timeNovaGeracao, placarTime1: 0, time2: this.timeRessaca, placarTime2: 0 }
+    { dataHora: "08/06 08:30",time1: this.timeCrystalPalace, placarTime1: 0, time2: this.timeRealBlack, placarTime2: 0 },
+    { dataHora: "08/06 09:30",time1: this.timeTaquaral, placarTime1: 0, time2: this.timeFuria, placarTime2: 0 },
+    { dataHora: "08/06 10:30",time1: this.timeLions, placarTime1: 0, time2: this.timeGalaticos, placarTime2: 0 },
+    { dataHora: "15/06 08:30",time1: this.timeGama, placarTime1: 0, time2: this.timeBelaVista, placarTime2: 0 },
+    { dataHora: "15/06 09:30",time1: this.timeNovaGeracao, placarTime1: 0, time2: this.timeRessaca, placarTime2: 0 }
   ]
 
   public rodadas3 = [
@@ -60,8 +60,8 @@ export class CampeonatoService {
   ]
 
   public rodadas4 = [
-    { dataHora: "29/06 19:50",time1: this.timeBelaVista, placarTime1: 0, time2: this.timeTaquaral, placarTime2: 0 },
-    { dataHora: "29/06 20:50",time1: this.timeFuria, placarTime1: 0, time2: this.timeGalaticos, placarTime2: 0 },
+    { dataHora: "29/06 09:50",time1: this.timeBelaVista, placarTime1: 0, time2: this.timeTaquaral, placarTime2: 0 },
+    { dataHora: "29/06 10:30",time1: this.timeFuria, placarTime1: 0, time2: this.timeGalaticos, placarTime2: 0 },
     { dataHora: "06/07 08:30",time1: this.timeLions, placarTime1: 0, time2: this.timeNovaGeracao, placarTime2: 0 },
     { dataHora: "06/07 09:30",time1: this.timeGama, placarTime1: 0, time2: this.timeCrystalPalace, placarTime2: 0 },
     { dataHora: "06/07 10:30",time1: this.timeRealBlack, placarTime1: 0, time2: this.timeRessaca, placarTime2: 0 }
