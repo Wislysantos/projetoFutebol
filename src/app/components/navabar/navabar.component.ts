@@ -28,7 +28,7 @@ export class NavabarComponent implements OnInit {
       {
         label: 'Regulamento',
         icon: 'pi pi-fw pi-home',
-        command: () => this.scrollToAnchor('artilheiro')
+        url: 'https://drive.google.com/file/d/17uE_lEPysZJyJQU7xD2YzcaktzficNaP/view'
       },
       {
         label: 'Tabela',
