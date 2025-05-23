@@ -11,14 +11,16 @@
                             <ng-template pTemplate="header">
                                 <tr>
                                     <th></th>
-                                    <th></th>
+                                    @if(this.isDesktop){
+                                        <th></th>
+                                    } 
                                     <th>P</th>
                                     <th>J</th>
                                     <th>V</th>
                                     <th>E</th>
                                     <th>D</th>
                                 </tr>
-                            </ng-template>
+                            </ng-template>                            
                             <ng-template pTemplate="body" let-timeGrupoA>
                                 <tr>
                                     <td>
@@ -28,7 +30,9 @@
                                             width="50"
                                         />
                                     </td>
+                                    @if(this.isDesktop){
                                     <td>{{timeGrupoA.nome}}</td>
+                                    }
                                     <td>{{timeGrupoA.pontos}}</td>
                                     <td>{{timeGrupoA.jogos}}</td>
                                     <td>{{timeGrupoA.vitorias}}</td>
@@ -50,7 +54,9 @@
                             <ng-template pTemplate="header">
                                 <tr>
                                     <th></th>
-                                    <th></th>
+                                    @if(this.isDesktop){
+                                        <th></th>
+                                    }
                                     <th>P</th>
                                     <th>J</th>
                                     <th>V</th>
@@ -67,7 +73,9 @@
                                             width="50"
                                         />
                                     </td>
-                                    <td>{{timeGrupoB.nome}}</td>
+                                    @if(this.isDesktop){
+                                        <td>{{timeGrupoB.nome}}</td>
+                                    }
                                     <td>{{timeGrupoB.pontos}}</td>
                                     <td>{{timeGrupoB.jogos}}</td>
                                     <td>{{timeGrupoB.vitorias}}</td>

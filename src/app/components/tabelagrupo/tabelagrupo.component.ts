@@ -15,6 +15,8 @@ import { CampeonatoService } from '../../services/campeonato.service';
 export class TabelagrupoComponent implements OnInit {
 
   isMobile = false;
+  isDesktop = false;
+  
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object, private campeonatoService: CampeonatoService) {
     if (isPlatformBrowser(this.platformId)) {
@@ -30,6 +32,9 @@ export class TabelagrupoComponent implements OnInit {
     this.timesGrupoB = this.campeonatoService.timesGrupoB;
     this.timesClasssificacaodoGrupoA = this.calcularClassificacao(this.timesGrupoA);
     this.timesClasssificacaodoGrupoB = this.calcularClassificacao(this.timesGrupoB);
+    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
+    this.isDesktop = isDesktop;
+    console.log('isDesktop:', isDesktop);
   }
 
 

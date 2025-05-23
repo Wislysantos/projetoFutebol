@@ -18,7 +18,7 @@ export class CampeonatoService {
   [
     { nome: 'Taquaral', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc435.4shared.com/img/9bGNSUvjfa/s24/196fa1e4168/taquaral?async&rand=0.9592027751940819'  },
     { nome: 'Real Black', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc435.4shared.com/img/R3fij0TGfa/s24/196fa1e3d80/realblack?async&rand=0.10655096825397614'  },
-    { nome: 'Nova Geração', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc614.4shared.com/img/QyZFJZdxfa/s24/196fa1e3998/novageracao?async&rand=0.09039091253276932'  },
+    { nome: 'Nova Geração', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc704.4shared.com/img/mXsr39p8ge/s24/196fac8b238/novageracao_white?async&rand=0.8221292739981957'  },
     { nome: 'Galáticos', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc614.4shared.com/img/R8RKS9u5fa/s24/196fa1e35b0/galaticos?async&rand=0.80551980335989'  },
     { nome: 'Gama', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc614.4shared.com/img/pR0l3ZoCjq/s24/196fa1e35b0/gama?async&rand=0.9381753409789247' }
   ];
@@ -36,43 +36,43 @@ export class CampeonatoService {
   public timeGama = [{nome: this.timesGrupoB[4].nome, img: this.timesGrupoB[4].img}];
 
   public rodadas1 = [
-    { dataHora: "26/05 19:50",time1: this.timeCrystalPalace, time2: this.timeTaquaral },
-    { dataHora: "26/05 20:50",time1: this.timeRealBlack, time2: this.timeLions },
-    { dataHora: "26/05 08:30",time1: this.timeFuria, time2: this.timeNovaGeracao },
-    { dataHora: "26/05 09:30",time1: this.timeGalaticos, time2: this.timeBelaVista },
-    { dataHora: "26/05 10:30",time1: this.timeRessaca, time2: this.timeGama }
+    { dataHora: "26/05 19:50",time1: this.timeCrystalPalace, placarTime1:0 , time2: this.timeTaquaral, placarTime2: 0 },
+    { dataHora: "26/05 20:50",time1: this.timeRealBlack, placarTime1: 0, time2: this.timeLions, placarTime2: 0 },
+    { dataHora: "26/05 08:30",time1: this.timeFuria, placarTime1: 0, time2: this.timeNovaGeracao, placarTime2: 0 },
+    { dataHora: "26/05 09:30",time1: this.timeGalaticos, placarTime1: 0, time2: this.timeBelaVista, placarTime2: 0 },
+    { dataHora: "26/05 10:30",time1: this.timeRessaca, placarTime1: 0, time2: this.timeGama, placarTime2: 0 }
   ]
 
   public rodadas2 = [
-    { dataHora: "08/06 19:50",time1: this.timeCrystalPalace, time2: this.timeRealBlack },
-    { dataHora: "08/06 20:50",time1: this.timeTaquaral, time2: this.timeFuria },
-    { dataHora: "08/06 08:30",time1: this.timeLions, time2: this.timeGalaticos },
-    { dataHora: "15/06 09:30",time1: this.timeGama, time2: this.timeBelaVista },
-    { dataHora: "15/06 10:30",time1: this.timeNovaGeracao, time2: this.timeRessaca }
+    { dataHora: "08/06 19:50",time1: this.timeCrystalPalace, placarTime1: 0, time2: this.timeRealBlack, placarTime2: 0 },
+    { dataHora: "08/06 20:50",time1: this.timeTaquaral, placarTime1: 0, time2: this.timeFuria, placarTime2: 0 },
+    { dataHora: "08/06 08:30",time1: this.timeLions, placarTime1: 0, time2: this.timeGalaticos, placarTime2: 0 },
+    { dataHora: "15/06 09:30",time1: this.timeGama, placarTime1: 0, time2: this.timeBelaVista, placarTime2: 0 },
+    { dataHora: "15/06 10:30",time1: this.timeNovaGeracao, placarTime1: 0, time2: this.timeRessaca, placarTime2: 0 }
   ]
 
   public rodadas3 = [
-    { dataHora: "15/06 10:30",time1: this.timeFuria, time2: this.timeRealBlack },
-    { dataHora: "22/06 08:30",time1: this.timeRessaca, time2: this.timeTaquaral },
-    { dataHora: "22/06 09:30",time1: this.timeCrystalPalace, time2: this.timeGalaticos },
-    { dataHora: "22/06 10:30",time1: this.timeNovaGeracao, time2: this.timeBelaVista },
-    { dataHora: "29/06 08:30",time1: this.timeLions, time2: this.timeGama }
+    { dataHora: "15/06 10:30",time1: this.timeFuria, placarTime1: 0, time2: this.timeRealBlack, placarTime2: 0 },
+    { dataHora: "22/06 08:30",time1: this.timeRessaca, placarTime1: 0, time2: this.timeTaquaral, placarTime2: 0 },
+    { dataHora: "22/06 09:30",time1: this.timeCrystalPalace, placarTime1: 0, time2: this.timeGalaticos, placarTime2: 0 },
+    { dataHora: "22/06 10:30",time1: this.timeNovaGeracao, placarTime1: 0, time2: this.timeBelaVista, placarTime2: 0 },
+    { dataHora: "29/06 08:30",time1: this.timeLions, placarTime1: 0, time2: this.timeGama, placarTime2: 0 }
   ]
 
   public rodadas4 = [
-    { dataHora: "29/06 19:50",time1: this.timeBelaVista, time2: this.timeTaquaral },
-    { dataHora: "29/06 20:50",time1: this.timeFuria, time2: this.timeGalaticos },
-    { dataHora: "06/07 08:30",time1: this.timeLions, time2: this.timeNovaGeracao },
-    { dataHora: "06/07 09:30",time1: this.timeGama, time2: this.timeCrystalPalace },
-    { dataHora: "06/07 10:30",time1: this.timeRealBlack, time2: this.timeRessaca }
+    { dataHora: "29/06 19:50",time1: this.timeBelaVista, placarTime1: 0, time2: this.timeTaquaral, placarTime2: 0 },
+    { dataHora: "29/06 20:50",time1: this.timeFuria, placarTime1: 0, time2: this.timeGalaticos, placarTime2: 0 },
+    { dataHora: "06/07 08:30",time1: this.timeLions, placarTime1: 0, time2: this.timeNovaGeracao, placarTime2: 0 },
+    { dataHora: "06/07 09:30",time1: this.timeGama, placarTime1: 0, time2: this.timeCrystalPalace, placarTime2: 0 },
+    { dataHora: "06/07 10:30",time1: this.timeRealBlack, placarTime1: 0, time2: this.timeRessaca, placarTime2: 0 }
   ]
 
   public rodadas5 = [
-    { dataHora: "13/07 08:30",time1: this.timeGalaticos, time2: this.timeRessaca },
-    { dataHora: "13/07 09:30",time1: this.timeTaquaral, time2: this.timeLions },
-    { dataHora: "13/07 10:30",time1: this.timeCrystalPalace, time2: this.timeNovaGeracao },
-    { dataHora: "20/07 09:00",time1: this.timeGama, time2: this.timeFuria },
-    { dataHora: "20/07 10:00",time1: this.timeRealBlack, time2: this.timeBelaVista }
+    { dataHora: "13/07 08:30",time1: this.timeGalaticos, placarTime1: 0, time2: this.timeRessaca, placarTime2: 0 },
+    { dataHora: "13/07 09:30",time1: this.timeTaquaral, placarTime1: 0, time2: this.timeLions, placarTime2: 0 },
+    { dataHora: "13/07 10:30",time1: this.timeCrystalPalace, placarTime1: 0, time2: this.timeNovaGeracao, placarTime2: 0 },
+    { dataHora: "20/07 09:00",time1: this.timeGama, placarTime1: 0, time2: this.timeFuria, placarTime2: 0 },
+    { dataHora: "20/07 10:00",time1: this.timeRealBlack, placarTime1: 0, time2: this.timeBelaVista, placarTime2: 0 }
   ]
 
   constructor() { }

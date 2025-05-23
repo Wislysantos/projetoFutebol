@@ -29,11 +29,15 @@
                         <ng-template pTemplate="header">
                             <tr>
                                 <th>Data e Hora</th>
-                                <th ></th>
+                                <th></th>
+                                @if(isDesktop){
+                                    <th ></th>
+                                }
                                 <th></th>
                                 <th></th>
-                                <th></th>
-                                <th></th>                                        
+                                @if(isDesktop){
+                                    <th></th>
+                                }                                        
                             </tr>
                         </ng-template>
                         <ng-template pTemplate="body" let-rodada1>
@@ -46,7 +50,9 @@
                                         width="50"
                                         />
                                 </td>
-                                <td >{{rodada1.time1[0]?.nome}}</td>
+                                @if (isDesktop) {
+                                    <td >{{rodada1.time1[0]?.nome}}</td>
+                                }
                                 <td>X</td>
                                  <td>
                                     <img 
@@ -55,7 +61,9 @@
                                         width="50"
                                         />
                                 </td>
-                                <td>{{rodada1.time2[0]?.nome}}</td>                                        
+                                @if (isDesktop) {
+                                    <td >{{rodada1.time2[0]?.nome}}</td>
+                                }                                
                             </tr>                                   
                         </ng-template>
                     </p-table>
@@ -71,12 +79,16 @@
                         <p-table [value]="rodadas2" [rows]="5">
                         <ng-template pTemplate="header">
                             <tr>
-                                <th>Data e Hora</th>
-                                <th ></th>
+                               <th>Data e Hora</th>
+                                <th></th>
+                                @if(isDesktop){
+                                    <th ></th>
+                                }
                                 <th></th>
                                 <th></th>
-                                <th></th>
-                                <th></th>                                       
+                                @if(isDesktop){
+                                    <th></th>
+                                }                                       
                             </tr>
                         </ng-template>
                         <ng-template pTemplate="body" let-rodada2>
@@ -89,7 +101,9 @@
                                         width="50"
                                         />
                                 </td>
-                                <td>{{rodada2.time1[0]?.nome}}</td>
+                                @if(isDesktop){
+                                    <td>{{rodada2.time1[0]?.nome}}</td>
+                                }                                
                                 <td>X</td>
                                  <td>
                                     <img 
@@ -98,7 +112,9 @@
                                         width="50"
                                         />
                                 </td>
-                                <td>{{rodada2.time2[0]?.nome}}</td>                                        
+                                @if (isDesktop) {
+                                    <td>{{rodada2.time2[0]?.nome}}</td>
+                                }                                                                        
                             </tr>
                         </ng-template>
                     </p-table>
@@ -115,11 +131,15 @@
                             <ng-template pTemplate="header">
                                 <tr >
                                     <th>Data e Hora</th>
+                                <th></th>
+                                @if(isDesktop){
                                     <th ></th>
+                                }
+                                <th></th>
+                                <th></th>
+                                @if(isDesktop){
                                     <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>                                        
+                                }                                        
                                 </tr>
                             </ng-template>
                             <ng-template pTemplate="body" let-rodada3>
@@ -132,7 +152,9 @@
                                             width="50"
                                             />
                                     </td>
-                                    <td>{{rodada3.time1[0]?.nome}}</td>
+                                    @if(isDesktop){
+                                        <td>{{rodada3.time1[0]?.nome}}</td>
+                                    }                                    
                                     <td>X</td>
                                      <td>
                                         <img 
@@ -141,7 +163,9 @@
                                             width="50"
                                             />
                                     </td>
-                                    <td>{{rodada3.time2[0]?.nome}}</td>                                       
+                                    @if(isDesktop){
+                                        <td>{{rodada3.time2[0]?.nome}}</td>
+                                    }                                                                           
                                 </tr>
                             </ng-template>
                         </p-table>
@@ -159,10 +183,14 @@
                                 <tr>
                                     <th>Data e Hora</th>
                                     <th></th>
+                                    @if(isDesktop){
+                                        <th ></th>
+                                    }
                                     <th></th>
                                     <th></th>
-                                    <th></th>
-                                    <th></th>                                        
+                                    @if(isDesktop){
+                                        <th></th>
+                                    }                                      
                                 </tr>
                             </ng-template>
                             <ng-template pTemplate="body" let-rodada4>
@@ -175,7 +203,9 @@
                                             width="50"
                                             />
                                     </td>
-                                    <td>{{rodada4.time1[0]?.nome}}</td>
+                                    @if(isDesktop){
+                                        <td>{{rodada4.time1[0]?.nome}}</td>
+                                    }                                    
                                     <td>X</td>
                                     <td>
                                         <img 
@@ -184,7 +214,9 @@
                                             width="50"
                                             />
                                     </td>
-                                    <td>{{rodada4.time2[0]?.nome}}</td>                                      
+                                    @if(isDesktop){
+                                        <td>{{rodada4.time2[0]?.nome}}</td>
+                                    }                                   
                                 </tr>
                             </ng-template>
                         </p-table>
@@ -200,12 +232,16 @@
                         <p-table [value]="rodadas5" [rows]="5">
                             <ng-template pTemplate="header">
                                 <tr>
-                                   <th>Data e Hora</th>
-                                    <th ></th>
+                                    <th>Data e Hora</th>
+                                    <th></th>
+                                    @if(isDesktop){
+                                        <th ></th>
+                                    }
                                     <th></th>
                                     <th></th>
-                                    <th></th>
-                                    <th></th>                                       
+                                    @if(isDesktop){
+                                        <th></th>
+                                    }                                       
                                 </tr>
                             </ng-template>
                             <ng-template pTemplate="body" let-rodada5>
@@ -218,7 +254,9 @@
                                             width="50"
                                             />
                                     </td>
-                                    <td>{{rodada5.time1[0]?.nome}}</td>
+                                    @if(isDesktop){
+                                        <td>{{rodada5.time1[0]?.nome}}</td>
+                                    }                                    
                                     <td>X</td>
                                     <td>
                                         <img 
@@ -227,7 +265,9 @@
                                             width="50"
                                             />
                                     </td>
-                                    <td>{{rodada5.time2[0]?.nome}}</td>                                      
+                                    @if (isDesktop) {
+                                        <td>{{rodada5.time2[0]?.nome}}</td>
+                                    }                                                                          
                                 </tr>
                             </ng-template>
                         </p-table>

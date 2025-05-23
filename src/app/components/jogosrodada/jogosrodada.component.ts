@@ -20,12 +20,15 @@ export class JogosrodadaComponent implements OnInit {
   rodadas4: any[] = [];
   rodadas5: any[] = [];
 
+  isDesktop = false; 
   ngOnInit(): void {
     this.rodadas1 = this.campeonatoService.rodadas1;
     this.rodadas2 = this.campeonatoService.rodadas2;
     this.rodadas3 = this.campeonatoService.rodadas3;
     this.rodadas4 = this.campeonatoService.rodadas4;
-    this.rodadas5 = this.campeonatoService.rodadas5;    
+    this.rodadas5 = this.campeonatoService.rodadas5;
+    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
+    this.isDesktop = isDesktop;    
   }
 
 }
