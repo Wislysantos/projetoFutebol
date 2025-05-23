@@ -1,10 +1,16 @@
 .divpatrocino {
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
   margin: 10px auto;
   display: flex;
+  justify-content: center; /* <- garante centralização */
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+
+  .desktop {
+    display: none;
+  }
 }
 
 .card-wrapper {
