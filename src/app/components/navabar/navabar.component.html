@@ -1,16 +1,17 @@
  <div class="navbar">
         <p-toolbar [style]="{ 'border-radius': '0rem',  }">
             <ng-template #start>
-                <p-button severity="secondary"   >
+                <div class="card flex justify-center" >
+                    <p-menu #menu [popup]="true" [model]="items" />
+                    <p-button (click)="menu.toggle($event)" icon="pi pi-bars" severity="secondary">
+                        <i class="pi pi-bars"></i>
+                    </p-button>
+                </div>
+                <p-button severity="secondary">
                     <a href="https://www.facebook.com/profile.php?id=61575567917023&locale=pt_BR">
                         <i class="pi pi-facebook"></i> 
                     </a>             
-                </p-button> 
-                <p-button severity="secondary">
-                    <a href="https://www.instagram.com/tvconsoni.esportes/">
-                        <i class="pi pi-instagram"></i> 
-                    </a>
-                </p-button>
+                </p-button>                
             </ng-template>
             <ng-template #center>
                 <div class="logo">                                        
@@ -18,6 +19,11 @@
                 </div>
             </ng-template>
              <ng-template #end>
+                <p-button severity="secondary">
+                    <a href="https://www.instagram.com/tvconsoni.esportes/">
+                        <i class="pi pi-instagram"></i> 
+                    </a>
+                </p-button>
                 <p-button severity="secondary">
                     <a href=""> 
                         <i class="pi pi-youtube"></i> 

@@ -6,11 +6,8 @@ import { BemvindoComponent } from '../bemvindo/bemvindo.component';
 import { PatrocinoComponent } from '../patrocino/patrocino.component';
 import { TabelagrupoComponent } from '../tabelagrupo/tabelagrupo.component';
 import { JogosrodadaComponent } from "../jogosrodada/jogosrodada.component";
-
-
-
-
-
+import { TabelaartilheiroComponent } from '../tabelaartilheiro/tabelaartilheiro.component';
+import { RodapeComponent } from "../rodape/rodape.component";
 @Component({
   selector: 'app-home',
   imports: [
@@ -18,22 +15,18 @@ import { JogosrodadaComponent } from "../jogosrodada/jogosrodada.component";
     BemvindoComponent,
     PatrocinoComponent,
     TabelagrupoComponent,
-    JogosrodadaComponent
+    JogosrodadaComponent,
+    TabelaartilheiroComponent,
+    RodapeComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent {  
 
-
-  
-
-  /*ngOnInit() {
-    this.timesClasssificacaodoGrupoA = this.calcularClassificacao(this.timesGrupoA);
-    this.timesClasssificacaodoGrupoB = this.calcularClassificacao(this.timesGrupoB);
-    console.log(this.rodadas1);
-    console.log(this.rodadas1[0].time1[0].nome);
-  }*/
+  ngOnInit() {
+    alert("Este site está sendo atualizado para melhorar sua experiência.")
+  }
 
 
   calcularClassificacao(times: any[]) {
