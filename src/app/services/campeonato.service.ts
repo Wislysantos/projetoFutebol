@@ -75,6 +75,24 @@ export class CampeonatoService {
     { dataHora: "20/07 10:00",time1: this.timeRealBlack, placarTime1: 0, time2: this.timeBelaVista, placarTime2: 0 }
   ]
 
+  public patrocinadores = [
+    { nome: 'Distribuidora Altas Horas', img: 'https://dc702.4shared.com/img/KzUPv9KZku/s24/196fe0b3ec0/altahoras?async=&rand=0.5181125757639943', imgsemfundo: 'https://dc706.4shared.com/img/pcvbB9k1ku/s23/196fddb60d8/altahoras' },
+    { nome: 'Arruda Viagens Turismo', img: 'https://dc702.4shared.com/img/wxbfe2B_ku/s24/196fe0b42a8/aruudaTurismo?async&rand=0.8531908915386023', imgsemfundo: 'https://dc706.4shared.com/img/rVjWMQ2hjq/s24/196fddb3db0/aruudaTurismo?async&rand=0.9494467785303145' }, 
+    { nome: 'Bar Do Deley', img: 'https://dc702.4shared.com/img/8ayDV7bAge/s24/196fe0b42a8/BarDoDeley?async&rand=0.8001959591888185', imgsemfundo: 'https://dc706.4shared.com/img/M6ZEjvIWjq/s24/196fddb4198/BarDoDeley?async&rand=0.19528696376383214' },
+    { nome: 'Black Cell', img: 'https://dc702.4shared.com/img/dkQgsm8Ifa/s24/196fe0b1f80/blackcell?async&rand=0.5043420305875644', imgsemfundo: 'https://dc706.4shared.com/img/FTWlwK9Jjq/s24/196fddb4198/blackcell?async&rand=0.5485528688767869' },
+    { nome: 'Cantinho Da Cohab', img: 'https://dc702.4shared.com/img/bqjJeutFjq/s24/196fe0b2368/cantinhoCohab?async&rand=0.14785866817531212', imgsemfundo: 'https://dc706.4shared.com/img/89dskj_Wfa/s24/196fddb4580/cantinhoCohab?async&rand=0.42769872967344336' },
+    { nome: 'Espaço Vip', img: 'https://dc702.4shared.com/img/NpdCJMbhfa/s24/196fe0b2750/EspacoVip?async&rand=0.5049991782314994', imgsemfundo: 'https://dc706.4shared.com/img/iv8dqNBsku/s24/196fddb4968/EspacoVip?async&rand=0.5696122012385244' },
+    { nome: 'W. P. A.', img: 'https://dc780.4shared.com/img/ZHaFkvYWku/s24/196fe1bc150/heltontamp?async&rand=0.2813631738956728', imgsemfundo: 'https://dc706.4shared.com/img/RvPkGsDgfa/s24/196fddb4968/helton?async&rand=0.6940261625992823' },
+    { nome: 'Inaka', img: 'https://dc702.4shared.com/img/5CHTh-fage/s24/196fe0b2b38/inaka?async&rand=0.36155080644127635', imgsemfundo: 'https://dc706.4shared.com/img/FrS-ptksjq/s24/196fddb5138/inaka__1_?async&rand=0.32706802513532407' },
+    { nome: 'Joval', img: 'https://dc702.4shared.com/img/Q-ee_Mloge/s24/196fe0b3308/JovaltamPatrocinador?async&rand=0.5788571275796767', imgsemfundo: 'https://dc706.4shared.com/img/3uCYqpxsfa/s24/196fddb5138/Joval?async&rand=0.6520072542926673' },
+    { nome: 'Joval', img: 'https://dc780.4shared.com/img/DoSmxSnKjq/s24/196fe1531a0/JovalPostotamP?async&rand=0.2916699857096492', imgsemfundo: 'https://dc706.4shared.com/img/9ZPDNcciku/s24/196fddb5cf0/JovalPosto?async&rand=0.8328207882014785' },
+    { nome: 'Mercearia do Messias', img: 'https://dc702.4shared.com/img/SBqzM5W3ge/s24/196fe10e7f8/messias?async&rand=0.6876800525221656', imgsemfundo: 'https://dc706.4shared.com/img/PcnoBlovku/s24/196fddb5520/messias?async&rand=0.6976166671619564' },
+    { nome: 'Paz', img: 'https://dc702.4shared.com/img/ich7Gxzwku/s24/196fe0b36f0/Paz?async&rand=0.2163858505828521', imgsemfundo: 'https://dc706.4shared.com/img/lsFe_VlEfa/s24/196fddb5520/Paz?async&rand=0.9079606010720278' },
+    { nome: 'Poker', img: 'https://dc702.4shared.com/img/ZdYtqIFcfa/s24/196fe0b36f0/Poker__1_?async&rand=0.7404340561842451', imgsemfundo: 'https://dc706.4shared.com/img/Ng4jmgDbku/s24/196fddb5908/Poker?async&rand=0.3110982278650879' },
+    { nome: 'Rc_NET', img: 'https://dc702.4shared.com/img/otmjZ0mRge/s24/196fe0b3ad8/rcNet?async&rand=0.034710587021495876', imgsemfundo: 'https://dc706.4shared.com/img/uxmuqRFsge/s24/196fddb5908/rcNet?async&rand=0.07802387521443876' },
+    { nome: 'Tendencia Modas', img: 'https://dc702.4shared.com/img/8A8c1qRRku/s24/196fe0b3ec0/tendenciamodas?async&rand=0.8984266894709452', imgsemfundo: 'https://dc706.4shared.com/img/J-FFqFssjq/s24/196fde88420/tendenciamodas?async&rand=0.8410412887123966' }
+  ]  
+
   constructor() { }
   
 }
