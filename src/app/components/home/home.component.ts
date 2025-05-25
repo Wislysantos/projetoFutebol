@@ -25,7 +25,7 @@ import { RodapeComponent } from "../rodape/rodape.component";
 export class HomeComponent {  
 
   ngOnInit() {
-    alert("Este site está sendo atualizado para melhorar sua experiência.")
+    //alert("Este site está sendo atualizado para melhorar sua experiência.")
   }
 
 

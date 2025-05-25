@@ -19,7 +19,7 @@ export class PatrocinoComponent implements OnInit{
 
   ngOnInit(): void {
     this.patrocinadores = this.campeonatoService.patrocinadores
-    console.log(this.patrocinadores);
+    //console.log(this.patrocinadores);
   }
 
 }

@@ -34,7 +34,7 @@ export class TabelagrupoComponent implements OnInit {
     this.timesClasssificacaodoGrupoB = this.calcularClassificacao(this.timesGrupoB);
     const isDesktop = window.matchMedia('(min-width: 769px)').matches;
     this.isDesktop = isDesktop;
-    console.log('isDesktop:', isDesktop);
+    //console.log('isDesktop:', isDesktop);
   }
 
 
