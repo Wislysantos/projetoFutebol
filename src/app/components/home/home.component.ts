@@ -8,6 +8,7 @@ import { TabelagrupoComponent } from '../tabelagrupo/tabelagrupo.component';
 import { JogosrodadaComponent } from "../jogosrodada/jogosrodada.component";
 import { TabelaartilheiroComponent } from '../tabelaartilheiro/tabelaartilheiro.component';
 import { RodapeComponent } from "../rodape/rodape.component";
+import { AvisoComponent } from "../aviso/aviso.component";
 @Component({
   selector: 'app-home',
   imports: [
@@ -17,7 +18,8 @@ import { RodapeComponent } from "../rodape/rodape.component";
     TabelagrupoComponent,
     JogosrodadaComponent,
     TabelaartilheiroComponent,
-    RodapeComponent
+    RodapeComponent,
+    AvisoComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
