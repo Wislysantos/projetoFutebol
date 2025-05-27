@@ -44,6 +44,12 @@ export class NavabarComponent implements OnInit {
         label: 'Artilharia',
         icon: 'pi pi-fw pi-calendar',
         command: () => this.scrollToAnchor('artilheiro')
+      },
+      {
+        label: 'Fotos',
+        icon: 'pi pi-camera',
+        disabled: true,
+        url: ''        
       }
     ];
   }
