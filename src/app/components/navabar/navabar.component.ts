@@ -41,6 +41,11 @@ export class NavabarComponent implements OnInit {
         command: () => this.scrollToAnchor('jogos')
       },
       {
+        label: 'Craque Do Jogo',
+        icon: 'pi pi-fw pi-calendar',
+        command: () => this.scrollToAnchor('craqueJogo')
+      },
+      {
         label: 'Artilharia',
         icon: 'pi pi-fw pi-calendar',
         command: () => this.scrollToAnchor('artilheiro')

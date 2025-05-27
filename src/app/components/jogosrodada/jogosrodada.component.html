@@ -30,9 +30,11 @@
                             <tr>
                                 <th>Data e Hora</th>
                                 <th></th>
+                                <th></th>
                                 @if(isDesktop){
                                     <th ></th>
                                 }
+                                <th></th>
                                 <th></th>
                                 <th></th>
                                 @if(isDesktop){
@@ -53,7 +55,9 @@
                                 @if (isDesktop) {
                                     <td >{{rodada1.time1[0]?.nome}}</td>
                                 }
+                                <td>{{rodada1.placarTime1 === 99 ? '' : rodada1.placarTime1}}</td>
                                 <td>X</td>
+                                <td>{{rodada1.placarTime2 === 99 ? '' : rodada1.placarTime2}}</td>
                                  <td>
                                     <img 
                                         [src]="rodada1.time2[0]?.img" 

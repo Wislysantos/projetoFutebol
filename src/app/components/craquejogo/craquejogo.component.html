@@ -1,10 +1,10 @@
-<div class="divtableartilheiro" id="artilheiro">
-    <h2>Artilheiro</h2>    
+<div class="divcraquejogo" id="craqueJogo">
+    <h2>Craque Do Jogo</h2>    
     <p-table    
     [paginator]="true"
     [rows]="5"    
     [rowsPerPageOptions]="[5, 10, 20]"
-    [value]="artilheiros"
+    [value]="craquesJogos"
     >
         <ng-template #header>
             <tr>
@@ -13,11 +13,11 @@
                 <th></th>           
             </tr>
         </ng-template>
-        <ng-template #body let-artilheiro>
+        <ng-template #body let-craqueJogo>
             <tr>
-                <td><img [src]="artilheiro.img" [alt]="artilheiro.nome"  width="70"></td>
-                <td>{{artilheiro.nome }}</td>
-                <td>{{artilheiro.gols }}</td>            
+                <td></td>
+                <td><img [src]="craqueJogo.img" [alt]="craqueJogo.nome"  width="70"></td>
+                <td>{{craqueJogo.nome }}</td>                           
             </tr>
         </ng-template>
     </p-table>

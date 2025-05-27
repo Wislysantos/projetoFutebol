@@ -9,6 +9,7 @@ import { JogosrodadaComponent } from "../jogosrodada/jogosrodada.component";
 import { TabelaartilheiroComponent } from '../tabelaartilheiro/tabelaartilheiro.component';
 import { RodapeComponent } from "../rodape/rodape.component";
 import { AvisoComponent } from "../aviso/aviso.component";
+import { CraquejogoComponent } from "../craquejogo/craquejogo.component";
 @Component({
   selector: 'app-home',
   imports: [
@@ -19,7 +20,8 @@ import { AvisoComponent } from "../aviso/aviso.component";
     JogosrodadaComponent,
     TabelaartilheiroComponent,
     RodapeComponent,
-    AvisoComponent
+    AvisoComponent,
+    CraquejogoComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

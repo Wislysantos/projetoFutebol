@@ -1,0 +1,9 @@
+.divcraquejogo{
+  margin-top: 20px;
+
+  h2, p {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
