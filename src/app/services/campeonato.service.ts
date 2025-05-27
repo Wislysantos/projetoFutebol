@@ -112,8 +112,8 @@ export class CampeonatoService {
 
   public CraqueRodada1 =
   [
-    {nome: 'Eduardo Mota', time: 'Taquaral', img: 'https://dc603.4shared.com/img/QAtFKLB3jq/s24/1970fba9e90/EduardoTaquaral?async&rand=0.8393502402308936'},
-    {nome: 'Joel Silva', time: 'Real Black', img: 'https://dc603.4shared.com/img/atsVsL_Yfa/s24/1970fba8b08/Joel?async&rand=0.45872198161599576'},
+    {nome: 'Eduardo Mota', time: 'Taquaral', jogo: this.rodadas1[0] ,img: 'https://dc603.4shared.com/img/QAtFKLB3jq/s24/1970fba9e90/EduardoTaquaral?async&rand=0.8393502402308936'},
+    {nome: 'Joel Silva', time: 'Real Black', jogo: this.rodadas1[1] ,img: 'https://dc603.4shared.com/img/atsVsL_Yfa/s24/1970fba8b08/Joel?async&rand=0.45872198161599576'},
   ];
 
   constructor() { }

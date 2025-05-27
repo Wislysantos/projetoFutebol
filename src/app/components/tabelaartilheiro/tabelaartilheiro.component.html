@@ -7,17 +7,25 @@
     [value]="artilheiros"
     >
         <ng-template #header>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>           
+            <tr>                
+                <th style="text-align: center;">Jogador<i class="pi pi-user"></i></th>              
+                <th style="text-align: center;">Gols</th>          
             </tr>
         </ng-template>
         <ng-template #body let-artilheiro>
             <tr>
-                <td><img [src]="artilheiro.img" [alt]="artilheiro.nome"  width="70"></td>
-                <td>{{artilheiro.nome }}</td>
-                <td>{{artilheiro.gols }}</td>            
+                <td>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <img [src]="artilheiro.img" [alt]="artilheiro.nome" width="70">
+                        <div>{{artilheiro.nome}}</div>
+                        <div style="color: dimgray;">{{artilheiro.time}}</div>        
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        {{artilheiro.gols }}
+                    </div>
+                </td>            
             </tr>
         </ng-template>
     </p-table>

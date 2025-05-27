@@ -1,5 +1,7 @@
-<div class="divcraquejogo" id="craqueJogo">
-    <h2>Craque Do Jogo</h2>    
+<div>
+
+    <div class="divcraquejogo" id="craqueJogo">
+        <h2>Craque Do Jogo</h2>    
     <p-table    
     [paginator]="true"
     [rows]="5"    
@@ -8,17 +10,28 @@
     >
         <ng-template #header>
             <tr>
-                <th></th>
-                <th></th>
-                <th></th>           
+                <th style="text-align: center;">Jogador<i class="pi pi-user"></i></th>               
+                <th  style="text-align: center;">Jogo</th>                      
             </tr>
         </ng-template>
-        <ng-template #body let-craqueJogo>
-            <tr>
-                <td></td>
-                <td><img [src]="craqueJogo.img" [alt]="craqueJogo.nome"  width="70"></td>
-                <td>{{craqueJogo.nome }}</td>                           
+        <ng-template pTemplate="body" let-craqueJogo>
+            <tr>                
+                <td>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div><img [src]="craqueJogo.img" [alt]="craqueJogo.nome" width="70" /></div>
+                        <div>{{craqueJogo.nome }}</div>
+                        <div style="color: dimgray;">{{craqueJogo.time}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div>{{craqueJogo.jogo.time1[0].nome}}</div>
+                        <div>X</div>
+                        <div>{{craqueJogo.jogo.time2[0].nome}}</div>
+                    </div>
+                </td>                                     
             </tr>
         </ng-template>
-    </p-table>
+    </p-table>  
+    </div>
 </div>
