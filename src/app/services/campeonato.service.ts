@@ -57,7 +57,7 @@ export class CampeonatoService {
   public rodadas1 = [
     { dataHora: "26/05 19:50",time1: this.timeCrystalPalace, placarTime1:1 , time2: this.timeTaquaral, placarTime2: 9 },
     { dataHora: "26/05 20:50",time1: this.timeRealBlack, placarTime1: 3, time2: this.timeLions, placarTime2: 3 },
-    { dataHora: "01/06 08:30",time1: this.timeFuria, placarTime1: 2, time2: this.timeNovaGeracao, placarTime2: 10 },
+    { dataHora: "01/06 08:30",time1: this.timeFuria, placarTime1: 2, time2: this.timeNovaGeracao, placarTime2: 8 },
     { dataHora: "01/06 09:30",time1: this.timeGalaticos, placarTime1: 6, time2: this.timeBelaVista, placarTime2: 10 },
     { dataHora: "01/06 10:30",time1: this.timeRessaca, placarTime1: 7, time2: this.timeGama, placarTime2: 6 }
   ]
