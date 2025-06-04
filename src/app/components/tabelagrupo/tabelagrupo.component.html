@@ -15,10 +15,14 @@
                                         <th></th>
                                     } 
                                     <th>P</th>
-                                    <th>J</th>
                                     <th>V</th>
-                                    <th>E</th>
-                                    <th>D</th>
+                                    <th>CV</th>
+                                    <th>CA</th>
+                                    <th>SG</th>
+                                    @if (this.isDesktop) {
+                                        <th>GM</th>
+                                        <th>GS</th>
+                                    }                                                                           
                                 </tr>
                             </ng-template>                            
                             <ng-template pTemplate="body" let-timeGrupoA>
@@ -34,10 +38,14 @@
                                     <td>{{timeGrupoA.nome}}</td>
                                     }
                                     <td>{{timeGrupoA.pontos}}</td>
-                                    <td>{{timeGrupoA.jogos}}</td>
                                     <td>{{timeGrupoA.vitorias}}</td>
-                                    <td>{{timeGrupoA.empates}}</td>
-                                    <td>{{timeGrupoA.derrotas}}</td>
+                                    <td>{{timeGrupoA.cv}}</td>
+                                    <td>{{timeGrupoA.ca}}</td>
+                                    <td>{{timeGrupoA.sg}}</td>
+                                      @if(this.isDesktop){
+                                          <td>{{timeGrupoA.gm}}</td>
+                                          <td>{{timeGrupoA.gs}}</td>
+                                      }
                                 </tr>
                             </ng-template>
                         </p-table>
@@ -56,12 +64,16 @@
                                     <th></th>
                                     @if(this.isDesktop){
                                         <th></th>
-                                    }
+                                    } 
                                     <th>P</th>
-                                    <th>J</th>
                                     <th>V</th>
-                                    <th>E</th>
-                                    <th>D</th>
+                                    <th>CV</th>
+                                    <th>CA</th>
+                                    <th>SG</th>
+                                    @if (this.isDesktop) {
+                                        <th>GM</th>
+                                        <th>GS</th>
+                                    }  
                                 </tr>
                             </ng-template>
                             <ng-template pTemplate="body" let-timeGrupoB>
@@ -76,11 +88,15 @@
                                     @if(this.isDesktop){
                                         <td>{{timeGrupoB.nome}}</td>
                                     }
-                                    <td>{{timeGrupoB.pontos}}</td>
-                                    <td>{{timeGrupoB.jogos}}</td>
+                                   <td>{{timeGrupoB.pontos}}</td>
                                     <td>{{timeGrupoB.vitorias}}</td>
-                                    <td>{{timeGrupoB.empates}}</td>
-                                    <td>{{timeGrupoB.derrotas}}</td>
+                                    <td>{{timeGrupoB.cv}}</td>
+                                    <td>{{timeGrupoB.ca}}</td>
+                                    <td>{{timeGrupoB.sg}}</td>
+                                      @if(this.isDesktop){
+                                          <td>{{timeGrupoB.gm}}</td>
+                                          <td>{{timeGrupoB.gs}}</td>
+                                      }
                                 </tr>
                             </ng-template>
                         </p-table>

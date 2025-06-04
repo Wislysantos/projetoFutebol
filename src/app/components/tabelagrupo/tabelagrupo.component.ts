@@ -28,10 +28,12 @@ export class TabelagrupoComponent implements OnInit {
   timesGrupoB: any[] = [];
 
   ngOnInit(): void {
-    this.timesGrupoA = this.campeonatoService.timesGrupoA;
-    this.timesGrupoB = this.campeonatoService.timesGrupoB;
-    this.timesClasssificacaodoGrupoA = this.calcularClassificacao(this.timesGrupoA);
-    this.timesClasssificacaodoGrupoB = this.calcularClassificacao(this.timesGrupoB);
+    this.timesGrupoA = this.campeonatoService.timesGrupoAM;
+    this.timesGrupoB = this.campeonatoService.timesGrupoBM;
+    //this.timesClasssificacaodoGrupoA = this.calcularClassificacao(this.timesGrupoA);
+    //this.timesClasssificacaodoGrupoB = this.calcularClassificacao(this.timesGrupoB);
+    this.timesClasssificacaodoGrupoA = this.timesGrupoA;
+    this.timesClasssificacaodoGrupoB = this.timesGrupoB;    
     const isDesktop = window.matchMedia('(min-width: 769px)').matches;
     this.isDesktop = isDesktop;
     //console.log('isDesktop:', isDesktop);
@@ -46,7 +48,12 @@ export class TabelagrupoComponent implements OnInit {
     const classificados = [...times].sort((a, b) => {
       if (b.pontos !== a.pontos) return b.pontos - a.pontos;
       if (b.vitorias !== a.vitorias) return b.vitorias - a.vitorias;
-      return 0; // Se quiser considerar saldo de gols, adicione aqui
+      if(b.cv !== a.cv) return b.cv + a.cv;
+      if(b.ca !== a.ca) return b.ca + a.ca;
+      if(b.sg !== a.sg) return b.sg - a.sg;
+      if(b.gm !== a.gm) return b.gm - a.gm;
+      if(b.gs !== a.gs) return b.gs - a.gs;
+      return 0;
     });
     return classificados;
   }

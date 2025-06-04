@@ -8,20 +8,38 @@ export class CampeonatoService {
   
   public timesGrupoA =
   [
-    { nome: 'Crystal Palace', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, img:'https://dc614.4shared.com/img/KA-gtIndjq/s24/196fa1e2de0/crystalpalace?async&rand=0.6378614181489618' },
-    { nome: 'Lions', pontos: 1, jogos: 1, vitorias: 0, empates: 1, derrotas: 0, img:'https://dc614.4shared.com/img/_572RHj5jq/s24/196fa1e3998/lions?async&rand=0.9687469723239873'  },
-    { nome: 'Bela Vista', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc614.4shared.com/img/xQ15hqkGjq/s24/196fa1e3d80/real?async&rand=0.03774409152271674'  },
-    { nome: 'Ressaca', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc435.4shared.com/img/qwbVbNNojq/s24/196fa1e4168/ressaca?async&rand=0.2635700656144826'  },
-    { nome: 'Fúria', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc614.4shared.com/img/piyFVOdQge/s24/196fa1e31c8/furia?async&rand=0.08308824956568084' },
+    { nome: 'Crystal Palace', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 1, gs: 10, sg: -9, cv: 0, ca:1 , img:'https://dc614.4shared.com/img/KA-gtIndjq/s24/196fa1e2de0/crystalpalace?async&rand=0.6378614181489618' },
+    { nome: 'Lions', pontos: 1, jogos: 1, vitorias: 0, empates: 1, derrotas: 0, gm: 3, gs: 3, sg: 0,cv:0 , ca:1 , img:'https://dc614.4shared.com/img/_572RHj5jq/s24/196fa1e3998/lions?async&rand=0.9687469723239873'  },
+    { nome: 'Bela Vista', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 10, gs: 6,  sg: 4,cv: 0, ca:1 , img:'https://dc614.4shared.com/img/xQ15hqkGjq/s24/196fa1e3d80/real?async&rand=0.03774409152271674'  },
+    { nome: 'Ressaca', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 7, gs: 6,  sg: 1,cv:0 , ca: 1, img:'https://dc435.4shared.com/img/qwbVbNNojq/s24/196fa1e4168/ressaca?async&rand=0.2635700656144826'  },
+    { nome: 'Fúria', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 2, gs: 8,  sg: -6,cv:0 , ca:0 , img:'https://dc614.4shared.com/img/piyFVOdQge/s24/196fa1e31c8/furia?async&rand=0.08308824956568084' },
   ];
 
   public timesGrupoB =
   [
-    { nome: 'Taquaral', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, img:'https://dc435.4shared.com/img/9bGNSUvjfa/s24/196fa1e4168/taquaral?async&rand=0.9592027751940819'  },
-    { nome: 'Real Black', pontos: 1, jogos: 1, vitorias: 0, empates: 1, derrotas: 0, img:'https://dc435.4shared.com/img/R3fij0TGfa/s24/196fa1e3d80/realblack?async&rand=0.10655096825397614'  },
-    { nome: 'Nova Geração', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc704.4shared.com/img/Jzedcu2Efa/s24/1970c8e39e8/novageracao_white_fundoPreto?async&rand=0.672181432893189'  },
-    { nome: 'Galáticos', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc614.4shared.com/img/R8RKS9u5fa/s24/196fa1e35b0/galaticos?async&rand=0.80551980335989'  },
-    { nome: 'Gama', pontos: 0, jogos: 0, vitorias: 0, empates: 0, derrotas: 0, img:'https://dc614.4shared.com/img/pR0l3ZoCjq/s24/196fa1e35b0/gama?async&rand=0.9381753409789247' }
+    { nome: 'Taquaral', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 10, gs: 1,  sg: 9,cv: 0, ca: 1, img:'https://dc435.4shared.com/img/9bGNSUvjfa/s24/196fa1e4168/taquaral?async&rand=0.9592027751940819'  },
+    { nome: 'Real Black', pontos: 1, jogos: 1, vitorias: 0, empates: 1, derrotas: 0, gm: 3, gs: 3,  sg: 0,cv: 0, ca: 0, img:'https://dc435.4shared.com/img/R3fij0TGfa/s24/196fa1e3d80/realblack?async&rand=0.10655096825397614'  },
+    { nome: 'Nova Geração', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 8, gs: 2,  sg: 6,cv: 0, ca: 1, img:'https://dc704.4shared.com/img/Jzedcu2Efa/s24/1970c8e39e8/novageracao_white_fundoPreto?async&rand=0.672181432893189'  },
+    { nome: 'Galáticos', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 6, gs: 10,  sg: -4,cv: 0, ca: 1, img:'https://dc614.4shared.com/img/R8RKS9u5fa/s24/196fa1e35b0/galaticos?async&rand=0.80551980335989'  },
+    { nome: 'Gama', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 6, gs: 7,  sg: -1,cv: 1, ca: 3, img:'https://dc614.4shared.com/img/pR0l3ZoCjq/s24/196fa1e35b0/gama?async&rand=0.9381753409789247' }
+  ];
+
+  public timesGrupoAM =
+  [
+    { nome: 'Ressaca', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 7, gs: 6,  sg: 1,cv:0 , ca: 0, img:'https://dc435.4shared.com/img/qwbVbNNojq/s24/196fa1e4168/ressaca?async&rand=0.2635700656144826'  },
+    { nome: 'Bela Vista', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 10, gs: 6,  sg: 4,cv: 0, ca:1 , img:'https://dc614.4shared.com/img/xQ15hqkGjq/s24/196fa1e3d80/real?async&rand=0.03774409152271674'  },
+    { nome: 'Lions', pontos: 1, jogos: 1, vitorias: 0, empates: 1, derrotas: 0, gm: 3, gs: 3, sg: 0,cv:0 , ca:1 , img:'https://dc614.4shared.com/img/_572RHj5jq/s24/196fa1e3998/lions?async&rand=0.9687469723239873'  },
+    { nome: 'Fúria', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 2, gs: 8,  sg: -6,cv:0 , ca:0 , img:'https://dc614.4shared.com/img/piyFVOdQge/s24/196fa1e31c8/furia?async&rand=0.08308824956568084' },
+    { nome: 'Crystal Palace', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 1, gs: 9, sg: -8, cv: 0, ca:1 , img:'https://dc614.4shared.com/img/KA-gtIndjq/s24/196fa1e2de0/crystalpalace?async&rand=0.6378614181489618' },
+  ];
+
+  public timesGrupoBM =
+  [
+    { nome: 'Taquaral', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 9, gs: 1,  sg: 8,cv: 0, ca: 1, img:'https://dc435.4shared.com/img/9bGNSUvjfa/s24/196fa1e4168/taquaral?async&rand=0.9592027751940819'  },
+    { nome: 'Nova Geração', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 8, gs: 2,  sg: 6,cv: 0, ca: 1, img:'https://dc704.4shared.com/img/Jzedcu2Efa/s24/1970c8e39e8/novageracao_white_fundoPreto?async&rand=0.672181432893189'  },
+    { nome: 'Real Black', pontos: 1, jogos: 1, vitorias: 0, empates: 1, derrotas: 0, gm: 3, gs: 3,  sg: 0,cv: 0, ca: 0, img:'https://dc435.4shared.com/img/R3fij0TGfa/s24/196fa1e3d80/realblack?async&rand=0.10655096825397614'  },
+    { nome: 'Galáticos', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 6, gs: 10,  sg: -4,cv: 0, ca: 1, img:'https://dc614.4shared.com/img/R8RKS9u5fa/s24/196fa1e35b0/galaticos?async&rand=0.80551980335989'  },
+    { nome: 'Gama', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 6, gs: 7,  sg: -1,cv: 1, ca: 3, img:'https://dc614.4shared.com/img/pR0l3ZoCjq/s24/196fa1e35b0/gama?async&rand=0.9381753409789247' }
   ];
 
   public timeCrystalPalace = [{nome: this.timesGrupoA[0].nome, img: this.timesGrupoA[0].img}];
@@ -39,9 +57,9 @@ export class CampeonatoService {
   public rodadas1 = [
     { dataHora: "26/05 19:50",time1: this.timeCrystalPalace, placarTime1:1 , time2: this.timeTaquaral, placarTime2: 9 },
     { dataHora: "26/05 20:50",time1: this.timeRealBlack, placarTime1: 3, time2: this.timeLions, placarTime2: 3 },
-    { dataHora: "01/06 08:30",time1: this.timeFuria, placarTime1: 99, time2: this.timeNovaGeracao, placarTime2: 99 },
-    { dataHora: "01/06 09:30",time1: this.timeGalaticos, placarTime1: 99, time2: this.timeBelaVista, placarTime2: 99 },
-    { dataHora: "01/06 10:30",time1: this.timeRessaca, placarTime1: 99, time2: this.timeGama, placarTime2: 99 }
+    { dataHora: "01/06 08:30",time1: this.timeFuria, placarTime1: 2, time2: this.timeNovaGeracao, placarTime2: 10 },
+    { dataHora: "01/06 09:30",time1: this.timeGalaticos, placarTime1: 6, time2: this.timeBelaVista, placarTime2: 10 },
+    { dataHora: "01/06 10:30",time1: this.timeRessaca, placarTime1: 7, time2: this.timeGama, placarTime2: 6 }
   ]
 
   public rodadas2 = [
