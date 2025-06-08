@@ -53,8 +53,8 @@ export class NavabarComponent implements OnInit {
       {
         label: 'Fotos',
         icon: 'pi pi-camera',
-        disabled: true,
-        url: ''        
+        disabled: false,
+        url: 'https://banlek.com/album/110b1e'        
       }
     ];
   }
