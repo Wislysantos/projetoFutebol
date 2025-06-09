@@ -28,17 +28,17 @@ export class CampeonatoService {
   [
     { nome: 'Ressaca', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 7, gs: 6,  sg: 1,cv:0 , ca: 0, img:'https://dc435.4shared.com/img/qwbVbNNojq/s24/196fa1e4168/ressaca?async&rand=0.2635700656144826'  },
     { nome: 'Bela Vista', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 10, gs: 6,  sg: 4,cv: 0, ca:1 , img:'https://dc614.4shared.com/img/xQ15hqkGjq/s24/196fa1e3d80/real?async&rand=0.03774409152271674'  },
-    { nome: 'Lions', pontos: 1, jogos: 1, vitorias: 0, empates: 1, derrotas: 0, gm: 3, gs: 3, sg: 0,cv:0 , ca:1 , img:'https://dc614.4shared.com/img/_572RHj5jq/s24/196fa1e3998/lions?async&rand=0.9687469723239873'  },
-    { nome: 'Fúria', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 2, gs: 8,  sg: -6,cv:0 , ca:0 , img:'https://dc614.4shared.com/img/piyFVOdQge/s24/196fa1e31c8/furia?async&rand=0.08308824956568084' },
-    { nome: 'Crystal Palace', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 1, gs: 9, sg: -8, cv: 0, ca:1 , img:'https://dc614.4shared.com/img/KA-gtIndjq/s24/196fa1e2de0/crystalpalace?async&rand=0.6378614181489618' },
+    { nome: 'Crystal Palace', pontos: 3, jogos: 2, vitorias: 1, empates: 0, derrotas: 1, gm: 4, gs: 9, sg: -5, cv: 0, ca:1 , img:'https://dc614.4shared.com/img/KA-gtIndjq/s24/196fa1e2de0/crystalpalace?async&rand=0.6378614181489618' },
+    { nome: 'Lions', pontos: 1, jogos: 2, vitorias: 0, empates: 1, derrotas: 1, gm: 5, gs: 13, sg: -8,cv:0 , ca:1 , img:'https://dc614.4shared.com/img/_572RHj5jq/s24/196fa1e3998/lions?async&rand=0.9687469723239873'  },
+    { nome: 'Fúria', pontos: 0, jogos: 2, vitorias: 0, empates: 0, derrotas: 2, gm: 3, gs: 29,  sg: -26,cv:0 , ca:0 , img:'https://dc614.4shared.com/img/piyFVOdQge/s24/196fa1e31c8/furia?async&rand=0.08308824956568084' },
   ];
 
   public timesGrupoBM =
   [
-    { nome: 'Taquaral', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 9, gs: 1,  sg: 8,cv: 0, ca: 1, img:'https://dc435.4shared.com/img/9bGNSUvjfa/s24/196fa1e4168/taquaral?async&rand=0.9592027751940819'  },
+    { nome: 'Taquaral', pontos: 6, jogos: 2, vitorias: 2, empates: 0, derrotas: 0, gm: 30, gs: 2,  sg: 28,cv: 0, ca: 1, img:'https://dc435.4shared.com/img/9bGNSUvjfa/s24/196fa1e4168/taquaral?async&rand=0.9592027751940819'  },
     { nome: 'Nova Geração', pontos: 3, jogos: 1, vitorias: 1, empates: 0, derrotas: 0, gm: 8, gs: 2,  sg: 6,cv: 0, ca: 1, img:'https://dc704.4shared.com/img/Jzedcu2Efa/s24/1970c8e39e8/novageracao_white_fundoPreto?async&rand=0.672181432893189'  },
-    { nome: 'Real Black', pontos: 1, jogos: 1, vitorias: 0, empates: 1, derrotas: 0, gm: 3, gs: 3,  sg: 0,cv: 0, ca: 0, img:'https://dc435.4shared.com/img/R3fij0TGfa/s24/196fa1e3d80/realblack?async&rand=0.10655096825397614'  },
-    { nome: 'Galáticos', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 6, gs: 10,  sg: -4,cv: 0, ca: 1, img:'https://dc614.4shared.com/img/R8RKS9u5fa/s24/196fa1e35b0/galaticos?async&rand=0.80551980335989'  },
+    { nome: 'Galáticos', pontos: 3, jogos: 2, vitorias: 1, empates: 0, derrotas: 1, gm: 16, gs: 12,  sg: 4,cv: 0, ca: 1, img:'https://dc614.4shared.com/img/R8RKS9u5fa/s24/196fa1e35b0/galaticos?async&rand=0.80551980335989'  },
+    { nome: 'Real Black', pontos: 1, jogos: 2, vitorias: 0, empates: 1, derrotas: 1, gm: 3, gs: 6,  sg: -3,cv: 0, ca: 4, img:'https://dc435.4shared.com/img/R3fij0TGfa/s24/196fa1e3d80/realblack?async&rand=0.10655096825397614'  },
     { nome: 'Gama', pontos: 0, jogos: 1, vitorias: 0, empates: 0, derrotas: 1, gm: 6, gs: 7,  sg: -1,cv: 1, ca: 3, img:'https://dc614.4shared.com/img/pR0l3ZoCjq/s24/196fa1e35b0/gama?async&rand=0.9381753409789247' }
   ];
 
@@ -63,9 +63,9 @@ export class CampeonatoService {
   ]
 
   public rodadas2 = [
-    { dataHora: "08/06 08:30",time1: this.timeCrystalPalace, placarTime1: 99, time2: this.timeRealBlack, placarTime2: 99 },
-    { dataHora: "08/06 09:30",time1: this.timeTaquaral, placarTime1: 99, time2: this.timeFuria, placarTime2: 99 },
-    { dataHora: "08/06 10:30",time1: this.timeLions, placarTime1: 99, time2: this.timeGalaticos, placarTime2: 99 },
+    { dataHora: "08/06 08:30",time1: this.timeCrystalPalace, placarTime1: 3, time2: this.timeRealBlack, placarTime2: 0 },
+    { dataHora: "08/06 09:30",time1: this.timeTaquaral, placarTime1: 21, time2: this.timeFuria, placarTime2: 1 },
+    { dataHora: "08/06 10:30",time1: this.timeLions, placarTime1: 2, time2: this.timeGalaticos, placarTime2: 10 },
     { dataHora: "15/06 08:30",time1: this.timeGama, placarTime1: 99, time2: this.timeBelaVista, placarTime2: 99 },
     { dataHora: "15/06 09:30",time1: this.timeNovaGeracao, placarTime1: 99, time2: this.timeRessaca, placarTime2: 99 }
   ]
@@ -112,47 +112,7 @@ export class CampeonatoService {
     { nome: 'Tendencia Modas', img: 'https://dc702.4shared.com/img/8A8c1qRRku/s24/196fe0b3ec0/tendenciamodas?async&rand=0.8984266894709452', imgsemfundo: 'https://dc706.4shared.com/img/J-FFqFssjq/s24/196fde88420/tendenciamodas?async&rand=0.8410412887123966' }
   ]
   
-  public artilheirosCopa =
-  [
-    {time: 'Real Black', nome: 'Herson Pereira', gols: 1, img:this.timeRealBlack[0].img },
-    {time: 'Real Black', nome: 'Joel Silva', gols: 1, img:'https://dc530.4shared.com/img/60zPlhorku/s24/1970fba48a0/Joel?async&rand=0.9718458431661894' },
-    {time: 'Real Black', nome: 'Deivid Silva', gols: 1, img:this.timeRealBlack[0].img },
-    {time: 'Lions', nome: 'Rian Joioz', gols: 1, img:this.timeLions[0].img },
-    {time: 'Lions', nome: 'Danilo Dias', gols: 1, img:this.timeLions[0].img },
-    {time: 'Lions', nome: 'Matheus Firmino', gols: 1, img:this.timeLions[0].img },
-    {time: 'Crystal Palace', nome: '', gols: 1, img:'' },
-    {time: 'Taquaral', nome: 'Felipe Mendes', gols: 2, img:'https://dc603.4shared.com/img/szWW08FRfa/s24/1970fba44b8/felipequaral?async&rand=0.15419507643327757' },
-    {time: 'Taquaral', nome: 'Eduardo Mota', gols: 3, img:'https://dc530.4shared.com/img/0qPTcl_ojq/s24/1970fba3ce8/EduardoTaquaral?async&rand=0.05909515117858799' },
-    {time: 'Taquaral', nome: 'Rafael dos S. Mariano', gols: 2, img: this.timeTaquaral[0].img },
-    {time: 'Taquaral', nome: 'Carlos Daniel da Silva', gols: 2, img:'https://dc530.4shared.com/img/9iSQWBEAku/s24/1970fba48a0/CarlosTaquaral?async&rand=0.14611080024511414' },
-    {time: 'Taquaral', nome: 'Mauricio Cesario', gols: 1, img:this.timeTaquaral[0].img },
-
-   { time: 'Ressaca', nome: 'Agenor', gols: 1, img: this.timeRessaca[0].img },
-  { time: 'Ressaca', nome: 'Felipe Oliveira', gols: 2, img: this.timeRessaca[0].img },
-  { time: 'Ressaca', nome: 'Bruno Souza', gols: 2, img: this.timeRessaca[0].img },
-  { time: 'Ressaca', nome: 'Luan Leal', gols: 1, img: this.timeRessaca[0].img },
-  { time: 'Ressaca', nome: 'Gabriel Froes', gols: 1, img: this.timeRessaca[0].img },
-  { time: 'Gama', nome: 'Guilherme', gols: 1, img: this.timeGama[0].img },
-  { time: 'Gama', nome: 'Arthur Silva', gols: 1, img: this.timeGama[0].img }, 
-  { time: 'Gama', nome: 'Lucas Vidal', gols: 2, img: this.timeGama[0].img },
-  { time: 'Gama', nome: 'Phelipe', gols: 2, img: this.timeGama[0].img },
-  { time: 'Furia', nome: 'Henquei Sabino', gols: 1, img: this.timeFuria[0].img },
-   { time: 'Furia', nome: 'Maxdener Saraiva', gols: 1, img: this.timeFuria[0].img },  
-  { time: 'Nova Geração', nome: 'Vitor Vitali', gols: 2, img: this.timeNovaGeracao[0].img },
-  { time: 'Nova Geração', nome: 'Wender', gols: 3, img: this.timeNovaGeracao[0].img },
-  { time: 'Nova Geração', nome: 'Bruno souza', gols: 1, img: this.timeNovaGeracao[0].img },
-  { time: 'Nova Geração', nome: 'Daniel Firmino', gols: 2, img: this.timeNovaGeracao[0].img },
-  { time: 'Galaticos', nome: 'Lucas', gols: 3, img: this.timeGalaticos[0].img },
-  { time: 'Galaticos', nome: 'Paulo Araujo', gols: 1, img: this.timeGalaticos[0].img },
-  { time: 'Galaticos', nome: 'Gerson', gols: 2, img: this.timeGalaticos[0].img },
-  { time: 'Bella vista', nome: 'Jeferson Justino', gols: 4, img: this.timeBelaVista[0].img },
-  { time: 'Bella vista', nome: 'Adrian Rodrigues', gols: 1, img: this.timeBelaVista[0].img },
-  { time: 'Bella vista', nome: 'Doglas Sousa', gols: 2, img: this.timeBelaVista[0].img },
-  { time: 'Bella vista', nome: 'Juvani Gomes', gols: 1, img: this.timeBelaVista[0].img },
-  { time: 'Bella vista', nome: 'Alex', gols: 1, img: this.timeBelaVista[0].img },
-  { time: 'Bella vista', nome: 'Igor Leandro', gols: 1, img: this.timeBelaVista[0].img },
-];
-
+  
   public CraqueRodada1 =
   [
     {nome: 'Eduardo Mota', time: 'Taquaral', jogo: this.rodadas1[0] ,img: 'https://dc704.4shared.com/img/jYSGPqfOge/s24/1974d77f688/DuzinhoCrackeJogo?async&rand=0.45955893114241275'},
@@ -161,6 +121,58 @@ export class CampeonatoService {
     {nome: 'Jeferson', time: 'Bela Vista', jogo: this.rodadas1[3] ,img: 'https://dc704.4shared.com/img/u17qAurKfa/s24/1974d77fe58/JehCrackeJogo?async&rand=0.38531814544222387'},
     {nome: 'Raffa', time: 'Ressaca', jogo: this.rodadas1[4] ,img: 'https://dc704.4shared.com/img/V2UPkHxWku/s24/1974d77fa70/RafaCrackeJogo?async&rand=0.7121489893680867'},
   ];
+
+  public artilheirosCopa =
+  [
+    {time: 'Real Black', nome: 'Herson Pereira', gols: 1, img: this.timeRealBlack[0].img},
+    {time: 'Real Black', nome: 'Joel Silva', gols: 1, img: this.timeRealBlack[0].img},
+    {time: 'Real Black', nome: 'Deivid Silva', gols: 1, img: this.timeRealBlack[0].img},
+    {time: 'Lions', nome: 'Diogo', gols: 1, img: this.timeLions[0].img},
+    {time: 'Lions', nome: 'Lucas Fiori', gols: 1, img: this.timeLions[0].img},
+    {time: 'Lions', nome: 'Rian Joioz', gols: 1, img: this.timeLions[0].img},
+    {time: 'Lions', nome: 'Danilo Dias', gols: 1, img: this.timeLions[0].img},
+    {time: 'Lions', nome: 'Matheus Firmino', gols: 1, img: this.timeLions[0].img},
+    {time: 'Crystal Palace', nome: 'Felipe Romão', gols: 1, img: this.timeCrystalPalace[0].img},
+    {time: 'Crystal Palace', nome: 'André Luiz', gols: 1, img: this.timeCrystalPalace[0].img},
+    {time: 'Crystal Palace', nome: 'João Macedo', gols: 2, img: this.timeCrystalPalace[0].img},
+    {time: 'Taquaral', nome: 'Felipe Mendes', gols: 3, img: this.timeTaquaral[0].img},
+    {time: 'Taquaral', nome: 'Eduardo Mota', gols: 9, img: this.timeTaquaral[0].img},
+    {time: 'Taquaral', nome: 'Rafael dos S. Mariano', gols: 6, img: this.timeTaquaral[0].img},
+    {time: 'Taquaral', nome: 'Carlos Daniel da Silva', gols: 3, img: this.timeTaquaral[0].img},
+    {time: 'Taquaral', nome: 'Joao', gols: 1, img: this.timeTaquaral[0].img},
+    {time: 'Taquaral', nome: 'cesar', gols: 1, img: this.timeTaquaral[0].img},
+    {time: 'Taquaral', nome: 'Rodrigo', gols: 2, img: this.timeTaquaral[0].img},
+    {time: 'Taquaral', nome: 'Mauricio Cesario', gols: 2, img: this.timeTaquaral[0].img},
+    {time: 'Ressaca', nome: 'Agenor', gols: 1, img: this.timeRessaca[0].img},
+    {time: 'Ressaca', nome: 'Felipe Oliveira', gols: 2, img: this.timeRessaca[0].img},
+    {time: 'Ressaca', nome: 'Bruno Souza', gols: 2, img: this.timeRessaca[0].img},
+    {time: 'Ressaca', nome: 'Luan Leal', gols: 1, img: this.timeRessaca[0].img},
+    {time: 'Ressaca', nome: 'Gabriel Froes', gols: 1, img: this.timeRessaca[0].img},
+    {time: 'Gama', nome: 'Guilherme', gols: 1, img: this.timeGama[0].img},
+    {time: 'Gama', nome: 'Arthur Silva', gols: 1, img: this.timeGama[0].img},
+    {time: 'Gama', nome: 'Lucas Vidal', gols: 2, img: this.timeGama[0].img},
+    {time: 'Gama', nome: 'Phelipe', gols: 2, img: this.timeGama[0].img},
+    {time: 'Furia', nome: 'Henquei Sabino', gols: 1, img: this.timeFuria[0].img},
+    {time: 'Furia', nome: 'Max', gols: 1, img: this.timeFuria[0].img},
+    {time: 'Furia', nome: 'Maxdener Saraiva', gols: 1, img: this.timeFuria[0].img},
+    {time: 'Nova Geração', nome: 'Vitor Vitali', gols: 2, img: this.timeNovaGeracao[0].img},
+    {time: 'Nova Geração', nome: 'Wender', gols: 3, img: this.timeNovaGeracao[0].img},
+    {time: 'Nova Geração', nome: 'Bruno souza', gols: 1, img: this.timeNovaGeracao[0].img},
+    {time: 'Nova Geração', nome: 'Daniel Firmino', gols: 2, img: this.timeNovaGeracao[0].img},
+    {time: 'Galaticos', nome: 'Lucas Oliveira', gols: 4, img: this.timeGalaticos[0].img},
+    {time: 'Galaticos', nome: 'Paulo Araujo', gols: 1, img: this.timeGalaticos[0].img},
+    {time: 'Galaticos', nome: 'Guilherme Dimei', gols: 4, img: this.timeGalaticos[0].img},
+    {time: 'Galaticos', nome: 'Jeferson Ribeiro', gols: 2, img: this.timeGalaticos[0].img},
+    {time: 'Galaticos', nome: 'Paulo Fernando', gols: 3, img: this.timeGalaticos[0].img},
+    {time: 'Galaticos', nome: 'Gerson', gols: 2, img: this.timeGalaticos[0].img},
+    {time: 'Bella vista', nome: 'Jeferson Justino', gols: 4, img: this.timeBelaVista[0].img},
+    {time: 'Bella vista', nome: 'Adrian Rodrigues', gols: 1, img: this.timeBelaVista[0].img},
+    {time: 'Bella vista', nome: 'Doglas Sousa', gols: 2, img: this.timeBelaVista[0].img},
+    {time: 'Bella vista', nome: 'Juvani Gomes', gols: 1, img: this.timeBelaVista[0].img},
+    {time: 'Bella vista', nome: 'Alex', gols: 1, img: this.timeBelaVista[0].img},
+    {time: 'Bella vista', nome: 'Igor Leandro', gols: 1, img: this.timeBelaVista[0].img}
+  ];
+
 
   constructor() { }
   
