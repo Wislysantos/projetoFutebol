@@ -120,6 +120,18 @@ export class CampeonatoService {
     {nome: 'Wender', time: 'Nova Geração', jogo: this.rodadas1[2] ,img: 'https://dc704.4shared.com/img/kkOLFJMvfa/s24/1974d77eeb8/WeuderCrackeJogo?async&rand=0.08654257706150548'},
     {nome: 'Jeferson', time: 'Bela Vista', jogo: this.rodadas1[3] ,img: 'https://dc704.4shared.com/img/u17qAurKfa/s24/1974d77fe58/JehCrackeJogo?async&rand=0.38531814544222387'},
     {nome: 'Raffa', time: 'Ressaca', jogo: this.rodadas1[4] ,img: 'https://dc704.4shared.com/img/V2UPkHxWku/s24/1974d77fa70/RafaCrackeJogo?async&rand=0.7121489893680867'},
+    {nome: 'João Macedo', time: 'Crystal Palace', jogo: this.rodadas2[0] ,img: 'https://dc593.4shared.com/img/bWqhqIZbjq/s24/1976f496f08/JoaoCraquejogo?async&rand=0.7646247067840042'},
+    {nome: 'Rafael', time: 'Taquaral', jogo: this.rodadas2[1] ,img: 'https://dc593.4shared.com/img/waGjeg0-jq/s24/1976f4976d8/rafacrackejogo?async&rand=0.9609204687508353'},
+    {nome: 'Gui Dimei', time: 'Crystal Palace', jogo: this.rodadas2[2] ,img: 'https://dc593.4shared.com/img/xURO_0RTjq/s24/1976f4976d8/guiCraquejogo?async&rand=0.09343293490285642'},
+  ];
+
+  
+  public CraqueRodada2 =
+  [
+    {nome: 'João Macedo', time: 'Crystal Palace', jogo: this.rodadas2[0] ,img: 'https://dc593.4shared.com/img/bWqhqIZbjq/s24/1976f496f08/JoaoCraquejogo?async&rand=0.7646247067840042'},
+    {nome: 'Rafael', time: 'Taquaral', jogo: this.rodadas2[1] ,img: 'https://dc593.4shared.com/img/waGjeg0-jq/s24/1976f4976d8/rafacrackejogo?async&rand=0.9609204687508353'},
+    {nome: 'Gui Dimei', time: 'Crystal Palace', jogo: this.rodadas2[2] ,img: 'https://dc593.4shared.com/img/xURO_0RTjq/s24/1976f4976d8/guiCraquejogo?async&rand=0.09343293490285642'},
+    
   ];
 
   public artilheirosCopa =
