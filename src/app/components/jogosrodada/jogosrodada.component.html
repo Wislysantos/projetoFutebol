@@ -145,6 +145,8 @@
                                 }
                                 <th></th>
                                 <th></th>
+                                <th></th>
+                                <th></th>
                                 @if(isDesktop){
                                     <th></th>
                                 }                                        
@@ -160,10 +162,12 @@
                                             width="50"
                                             />
                                     </td>
+                                    <td>{{rodada3.placarTime1 === 99 ? '': rodada3.placarTime1 }}</td>
                                     @if(isDesktop){
                                         <td>{{rodada3.time1[0]?.nome}}</td>
                                     }                                    
                                     <td>X</td>
+                                    <td>{{rodada3.placarTime2 === 99 ? '': rodada3.placarTime2 }}</td>
                                      <td>
                                         <img 
                                             [src]="rodada3.time2[0]?.img" 
@@ -171,6 +175,7 @@
                                             width="50"
                                             />
                                     </td>
+
                                     @if(isDesktop){
                                         <td>{{rodada3.time2[0]?.nome}}</td>
                                     }                                                                           
