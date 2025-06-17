@@ -1,6 +1,206 @@
 <div>
 
-    <div class="divcraquejogo" id="craqueJogo">
+    <div class="divrodadas">
+<h2 id="jogos">Craque Do Jogo</h2>
+<p>RODADAS</p>
+<p-stepper [value]="2" class="basis-[50rem]">
+    <div class="desktop">
+        <p-step-list>                
+        <p-step [value]="1">1° RODADA</p-step>
+        <p-step [value]="2">2° RODADA</p-step>
+        <p-step [value]="3">3° RODADA</p-step>
+        <p-step [value]="4">4° RODADA</p-step>
+        <p-step [value]="5">5° RODADA</p-step>                              
+    </p-step-list>
+    </div>  
+    <div class="mobile">
+        <p-step-list>                
+        <p-step [value]="1"></p-step>
+        <p-step [value]="2"></p-step>
+        <p-step [value]="3"></p-step>
+        <p-step [value]="4"></p-step>
+        <p-step [value]="5"></p-step>                              
+    </p-step-list>
+    </div>            
+    <p-step-panels>
+        <p-step-panel [value]="1">
+            <ng-template #content let-activateCallback="activateCallback">
+                <div class="flex flex-col h-48">
+                    <div>
+                    <p-table [value]="craquesJogos1" [rows]="5">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th style="text-align: center;">Jogador<i class="pi pi-user"></i></th>               
+                                <th  style="text-align: center;">Jogo</th>                      
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-craquesJogo1>
+                             <tr>                
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div><img [src]="craquesJogo1.img" [alt]="craquesJogo1.nome" width="70" /></div>
+                                        <div>{{craquesJogo1.nome }}</div>
+                                        <div style="color: dimgray;">{{craquesJogo1.time}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div>{{craquesJogo1.jogo.time1[0].nome}}</div>
+                                        <div>X</div>
+                                        <div>{{craquesJogo1.jogo.time2[0].nome}}</div>
+                                    </div>
+                                </td>
+                                </tr>                                
+                        </ng-template>
+                    </p-table>
+                    </div>                            
+                </div>
+            </ng-template>
+        </p-step-panel>
+
+        <p-step-panel [value]="2">
+            <ng-template #content let-activateCallback="activateCallback">
+                <div class="flex flex-col h-48">
+                    <div>
+                    <p-table [value]="craquesJogos2" [rows]="5">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th style="text-align: center;">Jogador<i class="pi pi-user"></i></th>               
+                                <th  style="text-align: center;">Jogo</th>                      
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-craquesJogo2>
+                             <tr>                
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div><img [src]="craquesJogo2.img" [alt]="craquesJogo2.nome" width="70" /></div>
+                                        <div>{{craquesJogo2.nome }}</div>
+                                        <div style="color: dimgray;">{{craquesJogo2.time}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div>{{craquesJogo2.jogo.time1[0].nome}}</div>
+                                        <div>X</div>
+                                        <div>{{craquesJogo2.jogo.time2[0].nome}}</div>
+                                    </div>
+                                </td>
+                                </tr>                                
+                        </ng-template>
+                    </p-table>
+                    </div>      
+                </div>                        
+            </ng-template>
+        </p-step-panel>
+
+        <p-step-panel [value]="3">
+            <ng-template #content let-activateCallback="activateCallback">
+                <div class="flex flex-col h-48">
+                    <div>
+                    <p-table [value]="craquesJogos3" [rows]="5">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th style="text-align: center;">Jogador<i class="pi pi-user"></i></th>               
+                                <th  style="text-align: center;">Jogo</th>                      
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-craquesJogo3>
+                             <tr>                
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div><img [src]="craquesJogo3.img" [alt]="craquesJogo3.nome" width="70" /></div>
+                                        <div>{{craquesJogo3.nome }}</div>
+                                        <div style="color: dimgray;">{{craquesJogo3.time}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div>{{craquesJogo3.jogo.time1[0].nome}}</div>
+                                        <div>X</div>
+                                        <div>{{craquesJogo3.jogo.time2[0].nome}}</div>
+                                    </div>
+                                </td>
+                                </tr>                                
+                        </ng-template>
+                    </p-table>
+                    </div>      
+                </div>                        
+            </ng-template>
+        </p-step-panel>
+
+        <p-step-panel [value]="4">
+            <ng-template #content let-activateCallback="activateCallback">
+                <div class="flex flex-col h-48">
+                    <div>
+                    <p-table [value]="craquesJogos3" [rows]="5">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th style="text-align: center;">Jogador<i class="pi pi-user"></i></th>               
+                                <th  style="text-align: center;">Jogo</th>                      
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-craquesJogo4>
+                             <tr>                
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div><img [src]="craquesJogo4.img" [alt]="craquesJogo4.nome" width="70" /></div>
+                                        <div>{{craquesJogo4.nome }}</div>
+                                        <div style="color: dimgray;">{{craquesJogo4.time}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div>{{craquesJogo4.jogo.time1[0].nome}}</div>
+                                        <div>X</div>
+                                        <div>{{craquesJogo4.jogo.time2[0].nome}}</div>
+                                    </div>
+                                </td>
+                                </tr>                                
+                        </ng-template>
+                    </p-table>
+                    </div>      
+                </div>                        
+            </ng-template>
+        </p-step-panel>
+
+        <p-step-panel [value]="5">
+            <ng-template #content let-activateCallback="activateCallback">
+                <div class="flex flex-col h-48">
+                    <div>
+                    <p-table [value]="craquesJogos1" [rows]="5">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th style="text-align: center;">Jogador<i class="pi pi-user"></i></th>               
+                                <th  style="text-align: center;">Jogo</th>                      
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-craquesJogo5>
+                             <tr>                
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div><img [src]="craquesJogo5.img" [alt]="craquesJogo5.nome" width="70" /></div>
+                                        <div>{{craquesJogo5.nome }}</div>
+                                        <div style="color: dimgray;">{{craquesJogo5.time}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="display: flex; flex-direction: column; align-items: center;">
+                                        <div>{{craquesJogo5.jogo.time1[0].nome}}</div>
+                                        <div>X</div>
+                                        <div>{{craquesJogo5.jogo.time2[0].nome}}</div>
+                                    </div>
+                                </td>
+                                </tr>                                
+                        </ng-template>
+                    </p-table>
+                    </div>      
+                </div>                        
+            </ng-template>
+        </p-step-panel>
+    </p-step-panels>
+</p-stepper>
+
+    <!-- <div class="divcraquejogo" id="craqueJogo">
         <h2>Craque Do Jogo</h2>    
     <p-table    
     [paginator]="true"
@@ -33,5 +233,5 @@
             </tr>
         </ng-template>
     </p-table>  
-    </div>
+    </div> -->
 </div>

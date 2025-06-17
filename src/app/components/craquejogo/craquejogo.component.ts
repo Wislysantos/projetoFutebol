@@ -8,12 +8,15 @@ import { PaginatorModule } from 'primeng/paginator';
 import { ButtonModule } from 'primeng/button';
 import { Tag } from 'primeng/tag';
 
+import { StepperModule } from 'primeng/stepper';
+
+
 import { CampeonatoService } from '../../services/campeonato.service';
 
 @Component({
   standalone: true,
   selector: 'app-craquejogo',
-  imports: [TableModule, DataViewModule, PaginatorModule, Tag, ButtonModule, CommonModule],
+  imports: [TableModule, DataViewModule, PaginatorModule, Tag, ButtonModule, CommonModule, StepperModule],
   templateUrl: './craquejogo.component.html',
   styleUrl: './craquejogo.component.css'
 })
@@ -22,11 +25,16 @@ export class CraquejogoComponent implements OnInit {
   constructor(private craques: CampeonatoService){
 
   }
-  craquesJogos: any[] = [];
+  craquesJogos1: any[] = [];
+  craquesJogos2: any[] = [];
+  craquesJogos3: any[] = [];
+  craquesJogos4: any[] = [];
+  craquesJogos5: any[] = [];
 
   ngOnInit() {
-    this.craquesJogos = this.craques.CraqueRodada1;
-    console.log(this.craquesJogos)
+    this.craquesJogos1 = this.craques.CraqueRodada1;
+    this.craquesJogos2 = this.craques.CraqueRodada2;
+    
   }
 
 }
