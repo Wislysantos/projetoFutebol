@@ -130,8 +130,16 @@ public timesGrupoAM =
     {nome: 'João Macedo', time: 'Crystal Palace', jogo: this.rodadas2[0] ,img: 'https://dc593.4shared.com/img/bWqhqIZbjq/s24/1976f496f08/JoaoCraquejogo?async&rand=0.7646247067840042'},
     {nome: 'Rafael', time: 'Taquaral', jogo: this.rodadas2[1] ,img: 'https://dc593.4shared.com/img/waGjeg0-jq/s24/1976f4976d8/rafacrackejogo?async&rand=0.9609204687508353'},
     {nome: 'Gui Dimei', time: 'Crystal Palace', jogo: this.rodadas2[2] ,img: 'https://dc593.4shared.com/img/xURO_0RTjq/s24/1976f4976d8/guiCraquejogo?async&rand=0.09343293490285642'},
+    {nome: 'Julio Cesar', time: 'Bela Vista', jogo: this.rodadas2[3] ,img: 'https://dc589.4shared.com/img/jWGy7Ydmge/s24/19795ca8ce8/julio_cesar?async&rand=0.7842701489116319'},
+    {nome: 'Bruno Barros', time: 'Ressaca', jogo: this.rodadas2[4] ,img: 'https://dc589.4shared.com/img/tG_INwghjq/s24/19795ca7960/brunoressaca?async&rand=0.9718188441240785'},
     
   ];
+
+  public CraqueRodada3 =
+  [
+    {nome: 'Devid', time: 'Real Black', jogo: this.rodadas3[0] ,img: 'https://dc589.4shared.com/img/SMLphGbFge/s24/19795cafe30/devidrealbrack?async&rand=0.08928633384873153'},
+  ];
+  
 
  public artilheirosCopa = [
   { time: 'Real Black', nome: 'Herson Pereira', gols: 1, img: this.timeRealBlack[0].img },

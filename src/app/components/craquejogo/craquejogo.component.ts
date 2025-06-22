@@ -34,6 +34,7 @@ export class CraquejogoComponent implements OnInit {
   ngOnInit() {
     this.craquesJogos1 = this.craques.CraqueRodada1;
     this.craquesJogos2 = this.craques.CraqueRodada2;
+    this.craquesJogos3 = this.craques.CraqueRodada3
     
   }
 
