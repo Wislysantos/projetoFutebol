@@ -1,7 +1,7 @@
 <div class="divrodadas">
 <h2 id="jogos">Próximos Jogos</h2>
 <p>RODADAS</p>
-<p-stepper [value]="3" class="basis-[50rem]">
+<p-stepper [value]="4" class="basis-[50rem]">
     <div class="desktop">
         <p-step-list>                
         <p-step [value]="1">1° RODADA</p-step>
@@ -201,6 +201,8 @@
                                     }
                                     <th></th>
                                     <th></th>
+                                    <th></th>
+                                    <th></th>
                                     @if(isDesktop){
                                         <th></th>
                                     }                                      
@@ -216,10 +218,12 @@
                                             width="50"
                                             />
                                     </td>
-                                    @if(isDesktop){
-                                        <td>{{rodada4.time1[0]?.nome}}</td>
+                                   <td>{{rodada4.placarTime1 === 99 ? '': rodada4.placarTime1 }}</td>
+                                   @if(isDesktop){
+                                       <td>{{rodada4.time1[0]?.nome}}</td>
                                     }                                    
                                     <td>X</td>
+                                    <td>{{rodada4.placarTime2 === 99 ? '': rodada4.placarTime2 }}</td>
                                     <td>
                                         <img 
                                             [src]="rodada4.time2[0]?.img" 

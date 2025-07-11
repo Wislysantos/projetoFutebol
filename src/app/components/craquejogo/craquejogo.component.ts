@@ -1,11 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { table } from 'console';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
-import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
 import { DataViewModule } from 'primeng/dataview';
 import { PaginatorModule } from 'primeng/paginator';
-import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 import { Tag } from 'primeng/tag';
 
 import { StepperModule } from 'primeng/stepper';
@@ -34,7 +33,9 @@ export class CraquejogoComponent implements OnInit {
   ngOnInit() {
     this.craquesJogos1 = this.craques.CraqueRodada1;
     this.craquesJogos2 = this.craques.CraqueRodada2;
-    this.craquesJogos3 = this.craques.CraqueRodada3
+    this.craquesJogos3 = this.craques.CraqueRodada3;
+    this.craquesJogos4 = this.craques.CraqueRodada4;
+    this.craquesJogos5 = this.craques.CraqueRodada5;
     
   }
 
