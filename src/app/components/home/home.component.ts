@@ -10,6 +10,8 @@ import { TabelaartilheiroComponent } from '../tabelaartilheiro/tabelaartilheiro.
 import { RodapeComponent } from "../rodape/rodape.component";
 import { AvisoComponent } from "../aviso/aviso.component";
 import { CraquejogoComponent } from "../craquejogo/craquejogo.component";
+import { ChaveamentoComponent } from '../chaveamento/chaveamento.component';
+import { JogosQuartasComponent } from '../jogos-quartas/jogos-quartas.component';
 @Component({
   selector: 'app-home',
   imports: [
@@ -18,10 +20,12 @@ import { CraquejogoComponent } from "../craquejogo/craquejogo.component";
     PatrocinoComponent,
     TabelagrupoComponent,
     JogosrodadaComponent,
+    JogosQuartasComponent,
     TabelaartilheiroComponent,
     RodapeComponent,
     AvisoComponent,
-    CraquejogoComponent
+    CraquejogoComponent,
+    ChaveamentoComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

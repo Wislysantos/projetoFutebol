@@ -1,7 +1,7 @@
 <div class="divrodadas">
 <h2 id="jogos">Próximos Jogos</h2>
 <p>RODADAS</p>
-<p-stepper [value]="4" class="basis-[50rem]">
+<p-stepper [value]="5" class="basis-[50rem]">
     <div class="desktop">
         <p-step-list>                
         <p-step [value]="1">1° RODADA</p-step>
@@ -251,9 +251,11 @@
                                 <tr>
                                     <th>Data e Hora</th>
                                     <th></th>
+                                    <th></th>
                                     @if(isDesktop){
                                         <th ></th>
                                     }
+                                    <th></th>
                                     <th></th>
                                     <th></th>
                                     @if(isDesktop){
@@ -274,17 +276,19 @@
                                     @if(isDesktop){
                                         <td>{{rodada5.time1[0]?.nome}}</td>
                                     }                                    
+                                    <td>{{rodada5.placarTime1}}</td>
                                     <td>X</td>
+                                    <td>{{rodada5.placarTime2}}</td>                                                                       
                                     <td>
                                         <img 
                                             [src]="rodada5.time2[0]?.img" 
                                             [alt]="rodada5.time2[0]?.nome"
                                             width="50"
                                             />
-                                    </td>
+                                        </td>
                                     @if (isDesktop) {
                                         <td>{{rodada5.time2[0]?.nome}}</td>
-                                    }                                                                          
+                                    }   
                                 </tr>
                             </ng-template>
                         </p-table>

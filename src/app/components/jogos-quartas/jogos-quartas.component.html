@@ -1,0 +1,186 @@
+<div class="divrodadas">
+    <h2 id="jogos">Próximos Jogos</h2>
+    <p>RODADAS</p>
+    <p-stepper [value]="2" class="basis-[50rem]">
+        <div class="desktop">
+            <p-step-list>                
+                <p-step [value]="1">Quartas</p-step>
+                <p-step [value]="2">Semi-Final</p-step>
+                <p-step [value]="3">Final</p-step>                              
+            </p-step-list>
+        </div>  
+        <div class="mobile">
+            <p-step-list>                
+                <p-step [value]="1">Quartas</p-step>
+                <p-step [value]="2">Semi-Final</p-step>
+                <p-step [value]="3">Final</p-step>                             
+            </p-step-list>
+        </div>            
+        <p-step-panels>
+            <p-step-panel [value]="1">
+                <ng-template #content let-activateCallback="activateCallback">
+                    <div class="flex flex-col h-48">
+                        <div>
+                            <p-table [value]="quartas" [rows]="5">
+                                <ng-template pTemplate="header">
+                                    <tr>
+                                        <th>Data e Hora</th>
+                                        <th></th>
+                                        <th></th>
+                                        @if(isDesktop){
+                                            <th ></th>
+                                        }
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        @if(isDesktop){
+                                            <th></th>
+                                        }                                   
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-rodada1>
+                                     <tr >
+                                            <td>{{quartas.dataHora}}</td>
+                                            <td>
+                                                <img 
+                                                    [src]="quartas.time1[0]?.img" 
+                                                    [alt]="quartas.time1[0]?.nome"
+                                                    width="50"
+                                                    />
+                                            </td>
+                                            @if (isDesktop) {
+                                                <td >{{rodada1.time1[0]?.nome}}</td>
+                                            }
+                                            <td>{{quartas.placarTime1 === 99 ? '' : quartas.placarTime1}}</td>
+                                            <td>X</td>
+                                            <td>{{quartas.placarTime2 === 99 ? '' : quartas.placarTime2}}</td>
+                                            <td>
+                                                <img 
+                                                    [src]="quartas.time2[0]?.img" 
+                                                    [alt]="quartas.time2[0]?.nome"
+                                                    width="50"
+                                                    />
+                                            </td>
+                                            @if (isDesktop) {
+                                                <td >{{quartas.time2[0]?.nome}}</td>
+                                            }                                
+                                     </tr>                                 
+                                </ng-template>
+                            </p-table>
+                        </div>                            
+                    </div>
+                </ng-template>
+            </p-step-panel>
+
+            <p-step-panel [value]="2">
+                <ng-template #content let-activateCallback="activateCallback">
+                    <div class="flex flex-col h-48">
+                        <div>
+                            <p-table [value]="semiFinal" [rows]="5">
+                                <ng-template pTemplate="header">
+                                    <tr>
+                                        <th>Data e Hora</th>
+                                        <th></th>
+                                        <th></th>
+                                        @if(isDesktop){
+                                            <th ></th>
+                                        }
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        @if(isDesktop){
+                                            <th></th>
+                                        }                                     
+                                            </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-rodada2>
+                                    <tr >
+                                        <td>{{semiFinal.dataHora}}</td>
+                                        <td>
+                                            <img 
+                                                [src]="semiFinal.time1[0]?.img" 
+                                                [alt]="semiFinal.time1[0]?.nome"
+                                                width="50"
+                                                />
+                                        </td>
+                                        @if (isDesktop) {
+                                            <td >{{semiFinal.time1[0]?.nome}}</td>
+                                        }
+                                        <td>{{semiFinal.placarTime1 === 99 ? '' : semiFinal.placarTime1}}</td>
+                                        <td>X</td>
+                                        <td>{{semiFinal.placarTime2 === 99 ? '' : semiFinal.placarTime2}}</td>
+                                        <td>
+                                            <img 
+                                                [src]="semiFinal.time2[0]?.img" 
+                                                [alt]="semiFinal.time2[0]?.nome"
+                                                width="50"
+                                                />
+                                        </td>
+                                        @if (isDesktop) {
+                                            <td >{{semiFinal.time2[0]?.nome}}</td>
+                                        }                                
+                                 </tr>    
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </div>                        
+                </ng-template>
+            </p-step-panel>
+
+            <p-step-panel [value]="3">
+                <ng-template #content let-activateCallback="activateCallback">
+                    <div class="flex flex-col h-48">
+                        <div>
+                            <p-table [value]="final" row="5">
+                                <ng-template pTemplate="header">
+                                    <tr>
+                                       <th>Data e Hora</th>
+                                        <th></th>
+                                        <th></th>
+                                        @if(isDesktop){
+                                            <th ></th>
+                                        }
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        @if(isDesktop){
+                                            <th></th>
+                                        }                                     
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-rodada3>
+                                    <tr >
+                                            <td>{{final.dataHora}}</td>
+                                            <td>
+                                                <img 
+                                                    [src]="final.time1[0]?.img" 
+                                                    [alt]="final.time1[0]?.nome"
+                                                    width="50"
+                                                    />
+                                            </td>
+                                            @if (isDesktop) {
+                                                <td >{{final.time1[0]?.nome}}</td>
+                                            }
+                                            <td>{{final.placarTime1 === 99 ? '' : final.placarTime1}}</td>
+                                            <td>X</td>
+                                            <td>{{final.placarTime2 === 99 ? '' : final.placarTime2}}</td>
+                                            <td>
+                                                <img 
+                                                    [src]="final.time2[0]?.img" 
+                                                    [alt]="final.time2[0]?.nome"
+                                                    width="50"
+                                                    />
+                                            </td>
+                                            @if (isDesktop) {
+                                                <td >{{final.time2[0]?.nome}}</td>
+                                            }                                
+                                        </tr>    
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </div>        
+                </ng-template>       
+            </p-step-panel>
+        </p-step-panels>
+    </p-stepper>
+</div>
